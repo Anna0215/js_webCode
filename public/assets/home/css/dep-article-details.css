@@ -1,0 +1,41 @@
+.crumb{
+	margin-top: 26px;
+	margin-bottom: 25px;
+}
+.crumb a{
+	font-size: 14px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #989898;
+}
+.details-content{
+	margin: 0 135px;
+}
+.title{
+	font-size: 40px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #282828;
+	line-height: 57px;
+	margin-top: 50px;
+	margin-bottom: 55px;
+	text-align: center;
+}
+.info{
+	font-size: 14px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #989898;
+	text-align: center;
+	margin-bottom: 63px;
+}
+.content{
+	font-size: 18px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #464646;
+	line-height: 37px;
+}
+.content img {
+	max-width: 100%;
+}

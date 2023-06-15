@@ -1,0 +1,116 @@
+.info{
+    margin-top: 45px;
+}
+.list{
+
+}
+.list h2{
+}
+.list li{
+    background: #fff;
+    border-radius: 6px;
+    padding:15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.list li .left{
+    float: left;
+    width:calc(100% - 140px);
+}
+.list li .right{
+    float: right;
+    padding-right: 16px;
+    background: url("/assets/images/right.png") no-repeat right center;
+    background-size: 7px 13px;
+}
+.list li .title{
+    font-size: 16px;
+    color:#282828;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.list li .labels{
+    overflow: hidden;
+}
+.list li .labels span{
+    display: block;
+    float: left;
+    border:1px solid #e5e5e5;
+    padding:0 6px;
+    height:16px;
+    line-height: 16px;
+    border-radius: 8px;
+    font-size: 10px;
+    color:#999;
+    margin-right:6px;
+    margin-top: 6px;
+}
+.list li .money{
+    font-size: 20px;
+    color:#e74744;
+    font-weight: 600;
+    text-align: right;
+}
+.list li .money i{
+    font-size: 13px;
+    color:#e74744;
+    font-weight: 600;
+}
+.list li .time{
+    font-size: 12px;
+    color:#999;
+}
+.no{
+    padding:70px 0;
+}
+.no img{
+    width:89px;
+}
+.no p{
+    font-size: 16px;
+    color:#999;
+    margin-top: 18px;
+}
+.kaihu,.xiaohu{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 11;
+}
+.kaihu .center,.xiaohu .center{
+    position: fixed;
+    left:15%;
+    top: calc(50% - 100px);
+    width: 70%;
+    height:auto;
+    background: #fff;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+.kaihu .txt,.xiaohu .txt{
+    font-size: 14px;
+    color: #333;
+    padding:30px 20px;
+    text-align: center;
+}
+.kaihu .btn,.xiaohu .btn{
+    text-align: center;
+    display: flex;
+    border-top: 1px solid #eee;
+}
+.kaihu .btn span,.xiaohu .btn span{
+    flex: 1;
+    display: block;
+    float: left;
+    width: 40%;
+    font-size: 14px;
+    color: #333;
+    padding:12px 0;
+    text-align: center;
+}
+.kaihu .btn span:nth-of-type(2),.xiaohu .btn span:nth-of-type(2){
+    color: #e74744;
+    border-left:1px solid #eee;
+}

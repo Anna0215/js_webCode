@@ -1,0 +1,437 @@
+body {
+    background-color: #E8E6E6;
+}
+
+.banner {
+    max-height: 420px;
+}
+
+.container {
+    padding: 0.44rem 0.453333rem;
+    background-color: #FFFFFF;
+}
+
+
+/**banner下的图片块区域**/
+.block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block1 .left_img {
+    display: block;
+    width: 4.213333rem;
+    height: 4.693333rem;
+}
+
+.block1 .top_img {
+    display: block;
+    width: 4.733333rem;
+    height: 1.813333rem;
+}
+
+.block1 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block1 .right_left_img {
+    display: block;
+    width: 2.306666rem;
+    height: 2.76rem;
+}
+
+.block1 .right_right_img {
+    display: block;
+    width: 2.306666rem;
+    height: 2.76rem;
+}
+
+.block1 .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/**公告**/
+.notice {
+    display: flex;
+    flex-direction: row;
+    height: 0.8rem;
+    margin: 0.24rem 0;
+    line-height: 0.8rem;
+    font-size: 0.373333rem;
+    overflow: hidden;
+}
+
+.notice .title {
+    font-size: 0.426666rem;
+    padding-left: 0.546666rem;
+    font-weight: bold;
+    background: url(../img/xiaolaba.png) no-repeat center left;
+    background-size: 0.333333rem 0.293333rem;
+}
+
+.notice_list {
+    width: 6rem;
+}
+
+.notice_list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.notice_list li {
+    list-style: none;
+    font-size: 0.373333rem;
+    overflow: hidden;
+}
+
+.notice_list a {
+    color: #282828;
+    text-decoration: none;
+    display: block;
+    width: 6rem;
+    overflow: hidden;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/**菜单**/
+.nav {
+    border-top: 0.013333rem solid #DCDCDC;
+}
+
+.nav .title {
+    font-size: 0.426666rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.28rem;
+}
+
+.nav .title_left {
+    margin-right: 0.386666rem;
+    width: 0.16rem;
+    height: 0.36rem;
+    background-color: #E74744;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0.33rem;
+    background-color: #ffffff;
+}
+
+.nav_item {
+    font-size: 0.373333rem;
+    width: 2.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.266666rem;
+    margin-bottom: 0.666666rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav_item .img_div {
+    width: 0.826666rem;
+    height: 0.826666rem;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_item .img_div img {
+    width: 0.826666rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.nav_item span {
+    line-height: 1;
+    margin-top: 0.373333rem;
+}
+
+/**菜单**/
+.tabbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    height: 1.68rem;
+    z-index:99999;
+}
+
+.tabbar_item {
+    text-decoration: none;
+    width: 2.493333rem;
+    height: 1.68rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.266666rem;
+    color: #989898;
+}
+
+.tabbar_item .img_div {
+    height: 0.56rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4rem;
+    padding-bottom: 0.133333rem;
+}
+
+.tabbar_item img {
+    width: 0.56rem;
+    height: auto;
+}
+
+.tabbar_item span {
+    padding-bottom: 0.2rem;
+}
+
+.tabbar_item span.active {
+    color: #E74744;
+}
+
+.wodebg {
+    background: #FFFFFF url(../img/ty.png) center -2.333333rem no-repeat;
+    background-size: 14.32rem 6.213333rem;
+    padding-top: 1px;
+}
+
+/**我的顶部**/
+.block2 {
+    width: 9.093333rem;
+    height: 4.56rem;
+    margin: 1.666666rem auto 0;
+    background: #FFFFFF url(../img/dw.png) 6.2rem -0.72rem no-repeat;
+    background-size: 2.48rem 2.44rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px #DCDCDC;
+    position: relative;
+    text-align: center;
+}
+
+.avatar {
+    width: 1.72rem;
+    height: 1.72rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -0.866666rem;
+    top: -0.866666rem;
+    display: block;
+    object-fit: cover;
+}
+
+.nickname_text {
+    font-size: 0.48rem;
+    line-height: 1;
+    padding-top: 1.2rem;
+}
+
+.level_text {
+    font-size: 0.373333rem;
+    color: #989898;
+    margin-top: 0.306666rem;
+    line-height: 1;
+}
+
+.block3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.block3 .block_item {
+    width: 2.273333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.266666rem;
+}
+
+.block3 .block_item span {
+    color: #E74744;
+    margin-bottom: 0.266666rem;
+    font-size: 0.426666rem;
+}
+
+/**我的菜单项目**/
+.menu_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.013333rem solid #DCDCDC;
+    background: url(../img/r.png) right center no-repeat;
+    background-size: 0.186666rem 0.346666rem;
+    height: 1.386666rem;
+}
+
+.menu_list .menu_item:last-child {
+    border-bottom: 0;
+}
+
+.menu_item {
+    font-size: 0.373333rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu_item .icon {
+    width: 0.466666rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+.menu_item .icon_div {
+    width: 0.533333rem;
+    text-align: center;
+    margin-right: 0.32rem;
+}
+
+.menu_item .title {
+    /*line-height: 1.386666rem;*/
+}
+
+
+/**消息列表**/
+.message-list {
+    background-color: #FFFFFF;
+    padding: 0 0.44rem;
+}
+
+.message-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0.44rem 0;
+    border-bottom: 1px dashed #989898;
+}
+
+.message-item:last-child {
+    border-bottom: 0;
+}
+
+.message-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.44rem;
+}
+
+.message-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 1.2rem;
+    justify-content: center;
+    width: 6rem;
+}
+
+.message-right-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message-item .title {
+    width: 4rem;
+    font-size: 0.453333rem;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    overflow: hidden;
+    color: #000000;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-item .time {
+    font-size: 0.373333rem;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    overflow: hidden;
+    color: #989898;
+}
+
+.message-item .content {
+    font-size: 0.373333rem;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    overflow: hidden;
+    color: #989898;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/**
+ * 顶部标题栏
+ */
+.topbar {
+    background-color: #dd514c;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 49px;
+    line-height: 49px;
+    align-items: center;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.topbar-left, .topbar-right {
+    width: 36px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.topbar-left img {
+    display: inline-block;
+    width: 9.59px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.topbar-title {
+    font-size: 20px;
+    height: 49px;
+    line-height: 49px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.topbar-title a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+@supports (bottom: env(safe-area-inset-bottom)) {
+    .tabbar {
+        padding-bottom: 8px;
+    }
+}

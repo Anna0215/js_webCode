@@ -1,0 +1,171 @@
+.tmoney{
+    margin-top: 15px;
+}
+.tmoney h2{
+    font-size: 14px;
+    color:#666;
+}
+
+.tmoney .money{
+    font-size: 30px;
+    color:#333;
+    font-weight: 600;
+}
+.tmoney .money i{
+    font-size: 16px;
+}
+.account{
+
+}
+.account .name{
+    font-size: 16px;
+    color:#282828;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.account .xian{
+    font-size: 13px;
+    color:#999;
+}
+.account_tel{
+    position: relative;
+    overflow: hidden;
+}
+.account_tel .name{
+    width:90px;
+    height:24px;
+    line-height: 24px;
+    font-size: 15px;
+    color:#777;
+    float: left;
+}
+.account_tel .input{
+    width:calc(100% - 172px);
+    height:24px;
+    line-height: 24px;
+    float: left;
+    position: relative;
+}
+.account_tel .input input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right:30px;
+    box-sizing: border-box;
+}
+.account_tel .input .close{
+    position: absolute;
+    right:0;
+    top:0;
+    width:24px;
+    height:24px;
+    background: url("~@/assets/images/close.png") no-repeat 2px center;
+    background-size:18px 18px;
+
+}
+.account_tel .getma{
+    width:80px;
+    height:24px;
+    line-height: 24px;
+    font-size: 13px;
+    color:#e74744;
+    float: right;
+    text-align: center;
+    border-left:1px solid #e5e5e5;
+}
+.payts{
+
+}
+.payts h2{
+    font-size: 15px;
+    color:#333;
+    margin: 12px 0;
+}
+.payts h2 i{
+    color:#e74744;
+    margin-left: 2px;
+    margin-right: 4px;
+}
+.payts .txt{
+    font-size: 13px;
+    color:#999;
+}
+.payts p{
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.tel_ts{
+    width: calc(80% - 20px);
+    font-size: 13px;
+    background: url("~@/assets/images/phone.png") no-repeat 2px center;
+    background-size:11px 13px;
+    color:#999;
+    padding:12px 0 12px 20px;
+    margin:0 auto;
+    text-align: left;
+}
+.tel_ts span{
+    color:#486195;
+}
+.kaihu,.xiaohu{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 11;
+}
+.kaihu .center,.xiaohu .center{
+    position: fixed;
+    left:15%;
+    top: calc(50% - 100px);
+    width: 70%;
+    height:auto;
+    background: #fff;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+.kaihu .txt,.xiaohu .txt{
+    font-size: 14px;
+    color: #333;
+    padding:30px 20px;
+    text-align: center;
+}
+.kaihu .btn,.xiaohu .btn{
+    text-align: center;
+    display: flex;
+    border-top: 1px solid #eee;
+}
+.kaihu .btn span,.xiaohu .btn span{
+    flex: 1;
+    display: block;
+    float: left;
+    width: 40%;
+    font-size: 14px;
+    color: #333;
+    padding:12px 0;
+    text-align: center;
+}
+.kaihu .btn span:nth-of-type(2),.xiaohu .btn span:nth-of-type(2){
+    color: #e74744;
+    border-left:1px solid #eee;
+}
+.signBox{position: fixed;left:0;top:0;width: 100%; height: 100%; z-index: 11; background: rgba(0,0,0,0.3); }
+.signBox .center{position: absolute;left:10%;top:calc(50% - 100px); width: 80%; height: auto; background: #fff; border-radius: 6px; text-align: center; padding:30px 0;}
+.signBox .center h2{font-size: 16px;}
+.signBox .center .input{padding-top:20px; width: 80%; margin:0 auto; overflow: hidden;}
+.signBox .center .input input.txt{ width: calc(100% - 80px); padding:0 10px; box-sizing: border-box; height:40px; border:1px solid #e6e6e6; border-radius: 4px; text-align: left; font-size: 14px; float: left; border-right:none;}
+.signBox .center .input input.btn{  width: 80px; display: block; padding:0 10px; box-sizing: border-box; height:40px; text-align: center; float: right; background: #e74744;
+    color: #fff; margin-top: 0; font-size: 12px; }
+.signBox .center .btn{width: 80%; margin:20px auto 0; overflow: hidden;}
+.signBox .center .btn input{
+    width: 100%;
+    height:40px;
+    background: #e74744;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    box-sizing: border-box;
+}

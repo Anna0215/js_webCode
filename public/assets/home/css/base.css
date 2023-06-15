@@ -1,0 +1,306 @@
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 通用头部 start */
+.header {
+	width: 100%;
+	min-width: 1200px;
+	height: 77px;
+	background: rgba(255, 255, 255, .8);
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+
+.header .h-content {
+	height: 77px;
+}
+
+.header .h-content .h-logo,
+.header .h-content .h-nav,
+.header .h-content .h-menu {
+	float: left;
+	height: 77px;
+	vertical-align: middle;
+	display: table-cell;
+	line-height: 77px;
+}
+
+.header .h-content .h-menu {
+	float: right;
+	margin-right: 20px;
+}
+
+.logo1 {
+	width: 91px;
+	height: 34px;
+	margin-right: 22px;
+}
+
+.logo2 {
+	width: 119px;
+	height: 28px;
+}
+
+.header .h-content .h-nav {
+	margin-left: 144px;
+	margin-right: 171px;
+}
+
+.header .h-content .h-nav ul {
+	/* float: left; */
+}
+
+.header .h-content .h-nav ul li {
+	float: left;
+	line-height: 77px;
+	margin-right: 29px;
+}
+
+.header .h-content .h-nav ul li:last-child {
+	margin-right: 0;
+}
+
+.header .h-content .h-nav ul li a {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #464646;
+}
+
+.header .h-content .h-nav ul li a:hover {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #BF0000;
+}
+
+.header .h-content .h-nav ul li .active {
+	color: #BF0000;
+}
+
+
+.header .h-content .h-menu .h-menu-item {
+	float: left;
+	line-height: 77px;
+	margin-right: 33px;
+}
+
+.header .h-content .h-menu .h-menu-item:last-child {
+	margin-right: 0;
+}
+
+.header .h-content .h-menu .h-menu-item img {
+	width: 13px;
+	height: 13px;
+	margin-right: 8px;
+	margin-top: -3px;
+}
+
+.header .h-content .h-menu .h-menu-item .h-menu-text {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #464646;
+}
+
+/* 通用头部 end */
+
+.crumb {
+	margin-top: 60px;
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #999999;
+	opacity: 1;
+	margin-bottom: 57px;
+}
+.crumb a {
+	margin: 0 12px;
+}
+
+.crumb a:first-child {
+	margin-left: 0;
+}
+
+/* 通用banner部分  start */
+.banner {
+	width: 100%;
+	height: 873px;
+	z-index: 0!important;
+}
+
+.banner .img {
+	width: 100%;
+	height: 873px;
+	background-image: url(../../img/home/banner2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner .pagination {
+	position: absolute;
+	z-index: 20;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.banner .swiper-pagination-switch {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #555;
+	margin: 0 10px;
+	opacity: 0.5;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.banner .swiper-active-switch {
+	background: #fff;
+	opacity: 1;
+}
+
+.banner .swiper-container{
+	z-index: 0!important;
+}
+
+/* 通用banner部分  end */
+
+/* 通用底部 start */
+.footer {
+	background: #363636;
+}
+
+.footer .f-content {
+	box-sizing: border-box;
+	padding: 42px 0;
+	overflow: hidden;
+}
+
+.footer .f-content .f-left {
+	float: left;
+	width: 483px;
+	height: 247px;
+	margin-right: 27px;
+	background-color: rgba(255, 255, 255, .03);
+	padding: 35px;
+	box-sizing: border-box;
+}
+
+.footer .f-content .f-left .f-left-text {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: rgba(255, 254, 254, .8);
+	line-height: 24px;
+	text-indent: 2em;
+}
+
+.footer .f-content .f-right {
+	float: left;
+	height: 247px;
+	width: 690px;
+	background-color: rgba(255, 255, 255, .03);
+	padding: 35px;
+	box-sizing: border-box;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-text {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-text p {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: rgba(255, 254, 254, .8);
+	line-height: 28px;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-qrcode {
+	float: left;
+	margin-top: 16px;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-qrcode .f-right-qrcode-item {
+	float: left;
+	text-align: center;
+	margin-right: 28px;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-qrcode .f-right-qrcode-item:last-child {
+	margin-right: 0;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-qrcode .f-right-qrcode-item img {
+	width: 72px;
+	height: 72px;
+}
+
+.footer .f-content .f-right .f-right-content .f-right-qrcode .f-right-qrcode-item p {
+	font-size: 12px;
+	margin-top: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: rgba(255, 254, 254, .8);
+}
+
+.footer .f-title {
+	text-align: center;
+	font-size: 20px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	margin-bottom: 39px;
+}
+
+.footer .f-title .f-title-line {
+	display: inline-block;
+	width: 46px;
+	border-top: 1px solid rgba(255, 255, 255, .6);
+	vertical-align: 5px;
+}
+
+.footer .f-title .f-title-text {
+	margin: 0 23px;
+}
+
+.footer .f-copyright {
+	background-color: #2E2E2E;
+	text-align: center;
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFEFE;
+	height: 77px;
+	line-height: 77px;
+}
+
+/* 通用底部 end */
+/* 通用底部2 start */
+.footer2 {
+	height: 138px;
+	background-color: rgba(248, 248, 248, 1);
+	text-align: center;
+	padding-top: 36px;
+	box-sizing: border-box;
+}
+
+.footer2 p {
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	line-height: 1;
+	margin-bottom: 23px;
+}
+
+/* 通用底部2 end */

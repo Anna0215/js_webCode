@@ -1,0 +1,936 @@
+/* @font-face {
+    font-family: 'PingFang SC';
+    src: url('./font/PingFang SC.ttf');
+    font-weight: normal;
+    font-style: normal;
+} */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "PingFang SC", "微软雅黑";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #061f48 url(../img/bg.jpg) no-repeat center center;
+	/* background-color: #061f48; */
+	background-size: 100% 100%;
+	height: 100%;
+	min-width: 12.3rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	font-size: 12px;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+	position: absolute;
+	right: -10px;
+}
+
+::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 4px;
+	background: #00D8FF;
+
+}
+
+::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 4px;
+	background: transparent;
+}
+
+.page-con::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 6px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 6px;
+}
+
+.page-con::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 6px;
+	background: #00D8FF;
+
+}
+
+.page-con::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 6px;
+	background: transparent;
+}
+
+/* 共同的头部 */
+.header {
+	width: 70.45rem;
+	height: 3.88rem;
+	overflow: hidden;
+	background-image: url(../img/top-bg.png),
+		url(../img/top-bg-l.png),
+		url(../img/top-bg-r.png);
+	background-repeat: no-repeat;
+	background-position: center 0, 21.34rem 1.5rem, 44.82rem 1.5rem;
+	background-size: 47.39rem 3.84rem, 4.26rem 0.84rem, 4.26rem 0.84rem;
+	position: relative;
+}
+
+.header::after {
+	content: ' ';
+	display: block;
+	width: 200%;
+	height: 7.76rem;
+	margin-left: -100px;
+	margin-top: -6.66rem;
+	box-shadow: 0px 2px 8px 6px rgba(0, 242, 255, 0.3) inset;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+
+.header .left,
+.header .right {
+	width: 25rem;
+}
+
+.header .center {
+	width: 16.45rem;
+	height: 3.88rem;
+	align-items: center;
+}
+
+.header .left {
+	padding-left: 2.35rem;
+	padding-top: 1.26rem;
+}
+
+/* 切换屏的按钮 */
+.page-btn {
+	width: 5rem;
+	height: 1.52rem;
+	position: relative;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.page-btn-border {
+	background-color: rgba(7, 67, 118, 0.2);
+	width: 5.16rem;
+	height: 1.52rem;
+	box-shadow: 0px 0px 6px 4px rgba(0, 242, 255, 0.3) inset;
+	transform: skewX(20deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.page-btn.active .page-btn-border {
+	box-shadow: 0px 0px 6px 2px rgba(255, 215, 85, 0.8) inset;
+}
+
+.page-btn-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 5.16rem;
+	height: 1.52rem;
+	line-height: 1.52rem;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #CAE3FD;
+}
+
+/* 标题 */
+.header .title {
+	font-size: 1.32rem;
+	font-family:Songti SC, "宋体";
+	font-weight: 900;
+	color: rgba(109, 216, 252, 1);
+	line-height: 1.2;
+	background: linear-gradient(180deg, rgba(215, 215, 215, 1) 0%, rgba(109, 216, 252, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+}
+
+.header .right {
+	padding-right: 1.62rem;
+}
+
+.header .time {
+	font-size: 0.88rem;
+	font-weight: bold;
+	color: rgba(37, 168, 236, 1);
+	line-height: 1;
+	margin-top: 1.65rem;
+	margin-right: 0.85rem;
+}
+
+.header .week,
+.header .year {
+	font-size: 0.36rem;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: 1;
+}
+
+.header .week {
+	margin-top: 1.40rem;
+	margin-bottom: 0.24rem;
+}
+
+/* 区块的边框 */
+.box {
+	box-sizing: border-box;
+	width: 7.928rem;
+	height: 9.209rem;
+	background-image: url(../img/light-t-l.png),
+		url(../img/light-t-r.png),
+		url(../img/light-b-l.png),
+		url(../img/light-b-r.png);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: top left, top right, bottom left, bottom right;
+	background-size: 0.47rem 0.4rem;
+	box-shadow: 0px 0px 8px 6px rgba(0, 242, 255, 0.3) inset;
+	/* padding: 0.05rem; */
+	position: relative;
+	margin-right: 1.16rem;
+	margin-bottom: 1.16rem;
+	color: #fff;
+	background-color: rgba(2, 85, 163, 0.32);
+}
+
+.box::after {
+	content: " ";
+	display: block;
+	width: 8.31rem;
+	height: 0.82rem;
+	background-image: url(../img/light.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 8.31rem 0.82rem;
+	position: absolute;
+	top: -0.42rem;
+	right: 0;
+	margin-right: -2rem;
+}
+
+.box .hd {
+	display: flex;
+	border-bottom: 1px solid #03507d;
+	margin: 0 0.9rem;
+	padding: 0.65rem 0 0.67rem;
+}
+
+.box .hd .title {
+	font-size: 0.68rem;
+	font-weight: 600;
+	color: rgba(202, 227, 253, 1);
+	line-height: 1;
+}
+
+.box .bd {
+	padding: 0 0.9rem;
+}
+
+/* 图标 */
+.icon {
+	display: block;
+	width: 0.68rem;
+	height: 0.68rem;
+	margin-right: 0.2rem;
+}
+
+/* 组织结构 */
+.dep-tree {
+	height: 16.9rem;
+	overflow: auto;
+}
+
+.dep-tree::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+	position: absolute;
+	right: -10px;
+}
+
+.dep-tree::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 4px;
+	background: #00D8FF;
+
+}
+
+.dep-tree::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 4px;
+	background: transparent;
+}
+
+ul.dep-tree,
+.dep-tree ul,
+.dep-tree li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dep-div {
+	width: 100%;
+}
+
+.dep-tree .dep-root-item .name {
+	font-size: 0.68rem;
+	line-height: 1;
+	font-weight: 500;
+	color: rgba(255, 217, 72, 1);
+	padding: 0.69rem 0.43rem 0.35rem 0;
+	margin-left: 0;
+}
+
+.dep-tree .dep-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	font-size: 0.59rem;
+	line-height: 1;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+
+.dep-tree .dep-item .name {
+	padding: 0.32rem 0 0.32rem 0;
+	margin: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.dep-item .name-div {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dep-item.active>.name-div {
+	box-shadow: 0px 0px 0.16rem 0.06rem rgba(255, 215, 85, 0.8) inset;
+}
+
+.icon-arrow {
+	width: 0.45rem;
+	height: 0.23rem;
+	margin-right: 0.5rem;
+}
+
+.icon-arrow.right {
+	width: 0.23rem;
+	height: 0.45rem;
+	margin-right: 0.61rem;
+}
+
+.bg-grey {
+	background-color: #BBBBBB;
+}
+
+.bg-gray {
+	background-color: #eaeaea;
+}
+
+/* 黄色 */
+.text-yellow {
+	color: #ffd948;
+}
+
+.text-orange {
+	color: #FF8305;
+}
+
+.text-white {
+	color: #ffffff;
+}
+
+.text-blue {
+	color: #00AEFF;
+}
+
+/* 深蓝 */
+.text-dark-blue {
+	color: #3F7BB9;
+}
+
+/* 浅蓝 */
+.text-light-blue {
+	color: #C9E3FD;
+}
+
+/* 青色 */
+.text-cyan {
+	color: #35F82B;
+}
+
+.text-light-green {
+	color: #00F2BC;
+}
+
+/* 字体大小 */
+.text-xs {
+	font-size: 0.52rem;
+}
+
+.text-68 {
+	font-size: 0.68rem;
+}
+
+.text-sm {
+	font-size: 0.8rem;
+}
+
+.text-df {
+	font-size: 1rem;
+}
+
+.text-lg {
+	font-size: 1.28rem;
+}
+
+
+.text-bold {
+	font-weight: bold;
+}
+
+
+.font-weight-600 {
+	font-weight: 600;
+}
+
+.text-cut {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.margin-top-sm {
+	margin-top: 0.4rem;
+}
+
+.margin-top-lg {
+	margin-top: 1.35rem;
+}
+
+.margin-tb-lg {
+	margin-top: 1.35rem;
+	margin-bottom: 1.35rem;
+}
+
+.padding-top-sm {
+	padding-top: 0.4rem;
+}
+
+
+/*
+******** 第一屏 ******
+*/
+.min-box .box .bd {
+	padding: 0 0.5rem;
+}
+
+/* 党组织架构 */
+.dep-box {
+	width: 12.64rem;
+	height: 20.34rem;
+}
+
+/* 领导班子 */
+.dep-leader-team {
+	width: 26.15rem;
+	height: 9.98rem;
+}
+
+/* 组织概况 */
+.dep-basic-facts {
+	width: 17.07rem;
+	height: 9.98rem;
+}
+
+/* 党员概况 */
+.user-basic-facts {
+	width: 7.928rem;
+	height: 9.98rem;
+}
+
+/* 党员基本情况 */
+.user-base-info-box {
+	width: 67.24rem;
+	height: 12.53rem;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+.box.user-base-info-box::after {
+	right: 8rem;
+	margin-right: -2rem;
+}
+
+.icon-user {
+	display: block;
+	width: 1.63rem;
+	height: 1.63rem;
+	margin-bottom: 0.16rem;
+}
+
+.icon-user-up {
+	display: inline-block;
+	width: 0.64rem;
+	height: 0.64rem;
+	margin-left: 0.27rem;
+}
+
+/* 领导班子 */
+.dep-leader-team .con {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 24rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.dep-leader-team .team-user {
+	width: 5.31rem;
+	text-align: center;
+	margin: 0.5rem 1.4333333rem 0;
+	padding-bottom: 0.1rem;
+	flex-shrink: 0;
+}
+
+.dep-leader-team .team-user:first-child {
+	/*margin-left: 0.5rem;*/
+}
+
+.dep-leader-team .pic {
+	display: inline-block;
+	width: 3.31rem;
+	height: 4.5rem;
+	border-radius: 0.2rem;
+	margin-bottom: 0.48rem;
+	object-fit: cover;
+	box-shadow: 0px 0px 6px 4px rgba(0, 242, 255, 0.3);
+}
+
+.dep-leader-team .nickname {
+	margin-bottom: 0.44rem;
+}
+
+/* 组织概况 */
+.chart-pie-box {
+	width: 4rem;
+	padding-top: 0.75rem;
+}
+
+.chart-pie {
+	width: 1.95rem;
+	height: 1.95rem;
+	margin-bottom: 0.5rem;
+}
+
+/* 党员基本情况 */
+.chart-div {
+	width: 11.17rem;
+	border-right: 1px solid #03507d;
+}
+
+.chart-div .title {
+	padding: 0 0.97rem;
+	font-size: 0.68rem;
+	color: #CAE3FD;
+	margin-bottom: 0.9rem;
+}
+
+/*
+******** 第二屏 ******
+*/
+.border {
+	width: 1px;
+	height: 8.36rem;
+	border-left: 1px solid rgba(0, 242, 255, 0.2);
+	margin: 0.92rem 0;
+}
+
+.border-dashed {
+	width: 1px;
+	height: 8.36rem;
+	border-left: 1px dashed rgba(0, 242, 255, 0.8);
+	/* margin: 0.92rem 0; */
+}
+.border-dashed-row{
+	width: 7.42rem;
+	border-top:1px dashed rgba(0, 242, 255, 0.8);
+}
+
+/* 领导班子 */
+.zuzhi {
+	width: 53.52rem;
+	height: 20.32rem;
+}
+
+
+/* 党员基本情况 */
+.user-develop {
+	width: 44.8rem;
+	height: 12.53rem;
+	margin-bottom: 0;
+	margin-right: 1.41rem;
+}
+
+.user-democracy {
+	width: 21.05rem;
+	height: 12.53rem;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+.zuzhi .warn-box,
+.info-box {
+	width: 10.957rem;
+	height: 7.8rem;
+	margin: 0;
+	/* margin-left: 0.92rem; */
+}
+
+.zuzhi .info-box .title, .zuzhi .warn-box .title {
+	font-size: 0.68rem;
+	color: #CAE3FD;
+	margin-top: 0.68rem;
+	margin-left: 0.69rem;
+}
+
+.box.user-base-info::after {
+	right: 8rem;
+	margin-right: -2rem;
+}
+
+.user-table {
+	/* display: block; */
+	/* width: 27.86rem; */
+	margin-top: 1.31rem;
+	margin-left: 0.97rem;
+	height: 15.75rem;
+	overflow-y: scroll;
+}
+
+.user-table table {
+	width: 27.36rem;
+	font-size: 0.6rem;
+
+	color: #CAE3FD;
+	border-spacing: 0;
+}
+
+.user-table::-webkit-scrollbar {
+	width: 0.17rem;
+	height: 0.17rem;
+	opacity: 0;
+}
+
+.user-table::-webkit-scrollbar-thumb {
+	border-radius: 20rem;
+	width: 0.17rem;
+	height: 6.81rem;
+	background-color: rgba(0, 216, 255, 1)
+}
+
+.user-table table tr:nth-child(odd) {
+	background-color: rgba(0, 243, 255, .08);
+	/* opacity: ; */
+}
+
+.user-table table tr:first-child {
+	background-color: rgba(4, 109, 181, .7)
+}
+
+.user-table table th {
+	text-align: left;
+	/* width: 7rem; */
+	height: 1.718rem;
+	padding-left: 1.23rem;
+}
+
+.user-table table td {
+	text-align: left;
+	/* width: 3rem; */
+	padding: 0;
+	height: 1.718rem;
+	padding-left: 1.23rem;
+}
+
+.user-statistics {
+	width: 10rem;
+	/* border-right: 1px solid rgba(41,244,255,.32); */
+}
+
+.sex-box {
+	/* border-right: 1px solid rgba(41,244,255,.32); */
+}
+
+.age-box {
+	/* border-right: 1px solid rgba(41,244,255,.32); */
+}
+
+.user-develop .bd .title {
+	margin-top: 0.86rem;
+	margin-left: 1.01rem;
+	font-size: 0.68rem;
+	color: #CAE3FD;
+}
+
+.apply-num,
+.active-num,
+.develop-num,
+.ready-num {
+	float: left;
+	text-align: center;
+	/* width: 50%; */
+	margin-bottom: 0.68rem;
+
+}
+
+.user-statistics .apply-num,
+.active-num {
+	/* margin-bottom: 0.68rem; */
+}
+
+.box-title {
+	font-size: 0.52rem;
+	color: #3F7BBA;
+}
+
+.sum {
+	margin-top: .744rem;
+	margin-bottom: .629rem;
+}
+
+.num {
+	font-size: 0.8rem;
+	margin-top: .3rem;
+}
+
+/*
+ ******** 第三屏 ******
+ */
+/* 领导班子 */
+.dep-team {
+	width: 39.64rem;
+	height: 10.57rem;
+}
+
+.user-rank {
+	width: 12.6rem;
+	height: 34.06rem;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+/* 党员基本情况 */
+.user-base-info {
+	width: 53.47rem;
+	height: 12.53rem;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+.box1{
+	width: 12.42rem;
+	height: 8.6rem;
+	font-size: 0.46rem;
+	color: #3F7BBA;
+}
+.box.user-base-info::after {
+	right: 8rem;
+	margin-right: -2rem;
+}
+
+.study-data {
+	overflow: hidden;
+}
+
+.box .sum {
+	width: 100%;
+	color: #FFC53D;
+	font-size: 1.02rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1.44rem;
+	margin-bottom: 1.25rem;
+}
+
+.box .sum span {
+	font-weight: normal;
+	font-size: .7rem;
+}
+
+.study-data .all-time {
+	float: left;
+	width: 49%;
+	text-align: center;
+}
+
+.study-data .study-time {
+	float: left;
+	width: 49%;
+	text-align: center;
+}
+
+.box .text-time {
+	width: 100%;
+	text-align: center;
+	color: #C9E3FE;
+	font-size: .7rem;
+	font-weight: bold;
+	margin-top: .3rem;
+}
+
+.box .text-time span {
+	font-size: .46rem;
+	font-weight: normal;
+}
+
+.box .text {
+	width: 100%;
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.user-rank {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.user-rank::-webkit-scrollbar {
+	width: 0.17rem;
+	height: 0.17rem;
+	border-radius: 20rem;
+	/* height: auto; */
+	opacity: 0;
+}
+
+.user-rank::-webkit-scrollbar-thumb {
+	border-radius: 20rem;
+	width: 0.17rem;
+	height: 6.81rem;
+	background-color: rgba(0, 216, 255, 1)
+}
+
+.user-rank-list {
+	overflow: hidden;
+	margin-bottom: .44rem;
+}
+.user-rank-list-box{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	height: 31.06rem;
+	position: absolute;
+	width: 12.56rem;
+}
+.user-rank-list-box > div{
+	min-height: 32rem;;
+}
+.rank {
+	font-style: italic;
+	color: #00AFFF;
+	margin-left: 1.04rem;
+	font-size: 0.72rem;
+	width: 1.55rem;
+}
+.rank-active{
+	color: #F4D845;
+	margin: 0;
+	padding: 0;
+}
+.user-rank-list:nth-child(1) .rank {
+	color: #FFC53D;
+}
+
+.user-rank-list:nth-child(2) .rank {
+	color: #01F7D4;
+}
+
+.user-rank-list:nth-child(3) .rank {
+	color: #FF8400;
+}
+
+.user-name {
+	color: #CAE3FD;
+	/*margin-left: 1.15rem;*/
+	font-size: 0.56rem;
+}
+
+.user-score {
+	color: #32C2F3;
+	font-size: 0.7189rem;
+	position: absolute;
+	right: 1.38rem;
+}
+
+.user-team {
+	margin-left: 1.9rem;
+	margin-top: .23rem;
+	padding-bottom: .66rem;
+	padding-left: .7rem;
+	border-bottom: 1px dashed rgba(0, 242, 255, .8);
+	margin-right: 1.38rem;
+}
+.user-rank-list:last-child .user-team{
+	border-bottom: 0;
+}
+.time-div{
+	color: #CAE3FD;
+	font-size: 0.46rem;
+	margin-bottom: -0.12rem;
+}
+.time-input{
+	width: 4.78rem;
+	margin-left: 0.38rem;
+	font-size: 0.46rem;
+	line-height: 1;
+	border: 1px solid rgba(0,242,255,.65);
+	border-radius: 0.2rem;
+	padding: 0.21rem 1rem 0.21rem 0.48rem;
+	background-color: transparent;
+	color: #CAE3FD;
+	background-image: url(../img/arrow-down-light-blue.png);
+	background-repeat: no-repeat;
+	background-size: 0.25rem 0.17rem;
+	background-position: 4.2rem center;
+}
+
+.icon-lost-contact{
+	display: block;
+	width: 1.71rem;
+	height: 1.64rem;
+	margin-bottom: 0.16rem;
+}

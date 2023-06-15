@@ -1,0 +1,248 @@
+*{
+	line-height: 1;
+}
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	
+}
+.header .people-logo{
+	width: 100%;
+	height: 200px;
+	background: #F8F8F8;
+	text-align: center;
+}
+.header .people-logo img{
+	margin-top: 48px;
+	width: 241.02px;
+	height: 106px;
+}
+.header .nav{
+	height: 72px;
+	background: #BC0000;
+}
+.header .nav .logo{
+	float: left;
+	margin-top: 12px;
+	margin-right: 68px;
+}
+.header .nav ul{
+	float: left;
+}
+.header .nav ul li{
+	float: left;
+}
+.header .nav ul li a{
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 72px;
+	color: #FFFFFF;
+	opacity: 1;
+	margin-right: 20px;
+	padding: 0 10px;
+	transition: all .1s;
+	border-radius: 10px;
+}
+.header .nav ul li a:hover{
+	background-color: #fff;
+	color: #BC0000;
+}
+.header .nav .login{
+	float: left;
+	line-height: 72px;
+	margin-left: 40px;
+	cursor: pointer;
+}
+.header .nav .login img{
+	width: 28px;
+	height: 28px;
+	margin-top: -5px;
+	margin-right: 8px;
+}
+.header .nav .login span{
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	opacity: 1;
+}
+.footer{
+	text-align: center;
+	width: 100%;
+	height: 144px;
+	background: #F8F8F8;
+	opacity: 1;
+	padding-top: 46px;
+	box-sizing: border-box;
+}
+.footer p{
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	opacity: 1;
+	margin-bottom: 28px;
+}
+/* 头部底部 end */
+
+.main {
+	line-height: 1;
+}
+.main .crumb {
+	margin-top: 60px;
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #999999;
+	opacity: 1;
+	margin-bottom: 57px;
+}
+.main .crumb a {
+	margin: 0 12px;
+}
+.main .crumb a:first-child{
+	margin-left: 0;
+}
+.main .title {
+	width: 100%;
+	border-bottom: 1px solid #E9E9E9;
+	box-sizing: border-box;
+	padding-bottom: 52px;
+}
+.main .title h3 {
+	font-size: 40px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	line-height: 68px;
+	color: #282828;
+	opacity: 1;
+	margin-bottom: 29px;
+}
+.main .title .info {
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #787878;
+	opacity: 1;
+}
+.main .left{
+	float: left;
+	width: 830px;
+	margin-right: 50px;
+	margin-top: 57px;
+	margin-bottom: 62px;
+}
+.main .left .text-content{
+	font-size: 20px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 38px;
+	color: #282828;
+	opacity: 1;
+	padding-bottom: 55px;
+	border-bottom: 1px solid #E9E9E9;
+}
+.main .left .text-content p {
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+.main .left .text-content img {
+	max-width: 100%;
+}
+.main .left .push-list{
+	margin-top: 54px;
+}
+.main .left .push-list .push-list-title{
+	font-size: 22px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+	opacity: 1;
+	box-sizing: border-box;
+	margin-bottom: 43px;
+}
+.main .left .push-list .push-list-title .red-line{
+	width: 4px;
+	background-color: rgba(188, 0, 0, 1);
+	height: 22px;
+	/* display: inline-block; */
+	float: left;
+	margin-right: 19px;
+}
+.main .left .push-list .push-list-item{
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	opacity: 1;
+	float: left;
+	max-width: 46%;
+	min-width: 46%;
+	overflow: hidden;
+	margin-bottom: 24px;
+	margin-right: 4%;
+	line-height: 1;
+	height: 18px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.main .right{
+	margin-top: 57px;
+	float: left;
+	width: 320px;
+	background: #F8F8F8;
+	opacity: 1;
+	margin-bottom: 30px;
+	padding: 24px;
+	box-sizing: border-box;
+	line-height: 1;
+}
+.main .right .right-title{
+	font-size: 22px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+	opacity: 1;
+	box-sizing: border-box;
+	margin-bottom: 43px;
+}
+.main .right .right-title .red-line{
+	width: 4px;
+	background-color: rgba(188, 0, 0, 1);
+	height: 22px;
+	/* display: inline-block; */
+	float: left;
+	margin-right: 19px;
+}
+.main .right .img-list{
+
+}
+.main .right .img-list img{
+	width: 272px;
+	height: 123px;
+	margin-bottom: 18px;
+}
+.main .right .qrcode{
+	overflow: hidden;
+	margin-top: 17px;
+}
+.main .right .qrcode .qrcode-item{
+	text-align: center;
+	margin-bottom: 35px;
+}
+.main .right .qrcode .qrcode-item img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 18px;
+}
+.main .right .qrcode .qrcode-item p{
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	opacity: 1;
+}

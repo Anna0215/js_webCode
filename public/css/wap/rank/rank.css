@@ -1,0 +1,99 @@
+.am-header .am-header-title{
+    margin: 0;
+    font-size:16px;
+}
+.am-header{
+
+}
+.am-header-default .am-header-nav {
+    height:100%;
+}
+.am-header-default .am-header-nav>a {
+    display:flex;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+}
+.contain{
+    padding:0.36rem;
+}
+.top-box{
+    /*margin-top:10px;*/
+    padding:0.3rem;
+    border:1px solid #eee;
+    border-radius:5px;
+    box-shadow:0 0.1rem 0.1rem #eee;
+    background:#fff url("/v2/img/dw.png") 4.7rem -0.7rem no-repeat;
+    background-size:2rem 2rem;
+    height:2rem;
+}
+div{
+    font-size:0.32rem;
+    line-height:1;
+}
+.user-info>div{
+    /*flex:1;*/
+    line-height:1;
+}
+.user-info div{
+    line-height:1;
+}
+.head_pic{
+    width:0.93rem;
+    height:0.93rem;
+    margin-right:0.3rem;
+    object-fit: cover;
+}
+.nickname{
+    font-size:0.28rem;
+    color:#000;
+}
+.paiming-pic{
+    width:0.24rem;
+    height:0.24rem;
+    margin-right:0.12rem;
+}
+.current-rank{
+    font-size:0.24rem;
+}
+.class-time{
+    font-size:0.28rem;
+    color:#E84744;
+}
+.department{
+    color:#989898;
+    font-size:0.24rem;
+    margin-top:0.21rem;
+}
+.rank-list-contain{
+    margin:0.5rem 0;
+    padding:0;
+    list-style: none;
+    color:#000;
+}
+.rank-list-contain>li{
+    /*height:1.35rem;*/
+    margin-bottom:0.31rem;
+}
+.list-head-pic{
+    height:0.91rem;
+    width:0.91rem;
+    margin:0 0.18rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.rank-num{
+    color:#000;
+    font-weight:bold;
+    font-style:italic;
+    width:auto !important;
+    min-width:0.44rem !important;
+}
+.rank-img{
+    width:0.44rem;
+    height:0.55rem;
+    vertical-align: top;
+}
+.rank-point{
+    color:#E84744;
+}

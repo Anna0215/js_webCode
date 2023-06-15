@@ -1,0 +1,121 @@
+.dep-info{
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.dep-article-nav{
+	height: 72px;
+	line-height: 72px;
+	margin: 0 auto;
+	margin-top: 0px;
+	background-image: url(../../dep/dep-nav-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #BF0000;
+}
+.dep-article-nav a:hover, .dep-article-nav .active {
+	background-color: #b10600;
+}
+.dep-article-nav a{
+	display: inline-block;
+	padding:0 36px;
+	font-size: 18px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #FFFFFF;
+	height: 72px;
+	line-height: 72px;
+}
+.dep-article-title{
+	margin-top: 46px;
+	margin-bottom: 54px;
+}
+.dep-article-title i{
+	display: block;
+	width: 6px;
+	height: 23px;
+	background: #BC0000;
+	float: left;
+	margin-right: 12px;
+	margin-top: 2px;
+}
+.dep-article-title span{
+	line-height: 1;
+	font-size: 24px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #BC0000;
+}
+.dep-article-item{
+	display: block;
+	overflow: hidden;
+	line-height: 20px;
+	margin-bottom: 23px;
+}
+.dep-article-item:last-child{
+	margin-bottom: 0;
+}
+.dep-article-item i{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #989898;
+	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	margin-top: 9px;
+}
+.dep-article-item .dep-article-item-title{
+	font-size: 18px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #464646;
+	float: left;
+	max-width: 990px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.dep-article-item .dep-article-item-time{
+	font-size: 18px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #464646;
+	float: right;
+}
+.page-div{
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.page-div .layui-laypage a, .layui-laypage span{
+	margin-left: 8px;
+	margin-right: 8px;
+	width: 37px;
+	height: 37px;
+	padding: 0;
+	text-align: center;
+	line-height: 37px;
+	font-size: 14px;
+	background: #F7F6F3;
+}
+.page-div .layui-laypage-prev{
+	width: 68px!important;
+}
+.page-div .layui-laypage-next{
+	width: 68px!important;
+}
+.page-div .layui-laypage .layui-laypage-curr .layui-laypage-em{
+	background: #BC0000;
+}
+.page-div .layui-laypage .layui-laypage-curr em{
+	font-size: 14px;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #fff;
+}
+.page-div .layui-laypage a:hover{
+	color: #BC0000;
+}
+#page{
+	text-align: center;
+}

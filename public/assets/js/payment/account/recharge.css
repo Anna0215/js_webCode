@@ -1,0 +1,268 @@
+.accountInfo{
+    background: #fff;
+    border-radius: 6px;
+}
+.accountInfo .top{
+    padding:19px 16px;
+    border-bottom:1px solid #e5e5e5;
+}
+.accountInfo .bot{
+    padding:19px 16px;
+    color:#666;
+    font-size:12px;
+}
+.accountInfo .img{
+    width:42px;
+    height:42px;
+    margin-right:10px;
+}
+.accountInfo .info{
+    width:calc(100% - 53px);
+}
+.accountInfo .info p:nth-of-type(1){
+    font-size: 16px;
+    color:#282828;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.accountInfo .info p:nth-of-type(2){
+    font-size: 12px;
+    color:#666;
+}
+.accountInfo .meau{
+    width:30px;
+    height:42px;
+    line-height: 42px;
+    position: relative;
+}
+.accountInfo .meau i{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #666;
+    margin:2px;
+}
+.cardList{
+
+}
+.cardList h2{
+    font-size: 14px;
+    color:#666;
+    height:16px;
+    line-height: 16px;
+    padding-left:14px;
+    background: url("/assets/images/line1.png") no-repeat 3px center;
+    background-size:3px 14px;
+    margin-left:-10px;
+}
+.cardList li{
+}
+.cardList li .top{
+    padding:15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.cardList li .bank{
+    font-size: 16px;
+    color:#282828;
+    font-weight: 600;
+}
+.cardList li .bank span{
+    display: inline-block;
+    height:16px;
+    line-height: 16px;
+    font-size: 10px;
+    color:#e74744;
+    padding:0 5px;
+    border:1px solid #e74744;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    position: relative;
+    top:-3px;
+    margin-left:5px;
+}
+.cardList li .card{
+    font-size: 12px;
+    color:#666;
+    line-height: 24px;
+}
+.cardList li .bot{
+    padding-top:10px;
+}
+.cardList li .bot .img{
+    width:36px;
+    margin-right:10px;
+    margin-top: 3px;
+}
+.cardList li .bot .txt{
+    font-size: 12px;
+    color:#666;
+    line-height: 20px;
+}
+.cardList li .handles{
+    padding-top: 5px;
+}
+.cardList li .handles span{
+    display: inline-block;
+    border:1px solid #e5e5e5;
+    width:55px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 26px;
+    color:#999;
+    font-size: 13px;
+    margin-left:3px;
+}
+.cardno{
+    text-align: center;
+    padding:50px 0 80px;
+}
+.cardno .img{
+}
+.cardno .img img{
+    width:70px;
+}
+.cardno .txt{
+    font-size: 15px;
+    color:#666;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.cardno .add{
+    width:230px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: #e74744;
+    margin:0 auto;
+}
+.cardno .add span{
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left:30px;
+    background: url("/assets/images/add.png") no-repeat 3px center;
+    background-size:19px 19px;
+}
+.meauSelect{
+    width:123px;
+    height:168px;
+    box-sizing: border-box;
+    padding:18px;
+    background: url("/assets/images/bg1.png") no-repeat center center;
+    background-size:100% 100%;
+    position: absolute;
+    right:-15px;
+    top:30px;
+}
+.meauSelect p{
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    color:#333;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.meauSelect p:nth-last-of-type(1){
+    border-bottom: 0;
+}
+.meauSelect p span{
+    display: inline-block;
+    padding-left: 30px;
+}
+.meauSelect p:nth-of-type(1) span{
+    background: url("/assets/images/icon1.png") no-repeat 0 center;
+    background-size:17px 17px;
+}
+.meauSelect p:nth-of-type(2) span{
+    background: url("/assets/images/icon2.png") no-repeat 0 center;
+    background-size:19px 17px;
+}
+.meauSelect p:nth-of-type(3) span{
+    background: url("/assets/images/icon3.png") no-repeat 0 center;
+    background-size:17px 15px;
+}
+.signBox{position: fixed;left:0;top:0;width: 100%; height: 100%; z-index: 11; background: rgba(0,0,0,0.3); }
+.signBox .center{position: absolute;left:10%;top:calc(50% - 100px); width: 80%; height: auto; background: #fff; border-radius: 6px; text-align: center; padding:30px 0;}
+.signBox .center h2{font-size: 16px;}
+.signBox .center .input{padding-top:20px; width: 80%; margin:0 auto; overflow: hidden;}
+.signBox .center .input input.txt{ width: calc(100% - 80px); padding:0 10px; box-sizing: border-box; height:40px; border:1px solid #e6e6e6; border-radius: 4px; text-align: left; font-size: 14px; float: left; border-right:none;}
+.signBox .center .input input.btn{  width: 80px; display: block; padding:0 10px; box-sizing: border-box; height:40px; text-align: center; float: right; background: #e74744;
+    color: #fff; margin-top: 0; font-size: 12px; }
+.signBox .center .btn{width: 80%; margin:20px auto 0; overflow: hidden;}
+.signBox .center .btn input{
+    width: 100%;
+    height:40px;
+    background: #e74744;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+/*.signBox .center .btn input:nth-of-type(1){*/
+/*float: left;*/
+/*border:1px solid #e74744;*/
+/*color: #e74744;*/
+/*background: none;*/
+/*}*/
+/*.signBox .center .btn input:nth-of-type(2){*/
+/*float: right;*/
+/*}*/
+.kaihu,.xiaohu{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 11;
+}
+.kaihu .center,.xiaohu .center{
+    position: fixed;
+    left:15%;
+    top: calc(50% - 100px);
+    width: 70%;
+    height:auto;
+    background: #fff;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+.kaihu .txt,.xiaohu .txt{
+    font-size: 14px;
+    color: #333;
+    padding:30px 20px;
+    text-align: center;
+}
+.kaihu .btn,.xiaohu .btn{
+    text-align: center;
+    display: flex;
+    border-top: 1px solid #eee;
+}
+.kaihu .btn span,.xiaohu .btn span{
+    flex: 1;
+    display: block;
+    float: left;
+    width: 40%;
+    font-size: 14px;
+    color: #333;
+    padding:12px 0;
+    text-align: center;
+}
+.kaihu .btn span:nth-of-type(2),.xiaohu .btn span:nth-of-type(2){
+    color: #e74744;
+    border-left:1px solid #eee;
+}
+.tel_ts{
+    width: calc(80% - 20px);
+    font-size: 13px;
+    background: url("/assets/images/phone.png") no-repeat 2px center;
+    background-size:11px 13px;
+    color:#999;
+    padding:12px 0 12px 20px;
+    margin:0 auto;
+    text-align: left;
+}
+.tel_ts span{
+    color:#486195;
+}

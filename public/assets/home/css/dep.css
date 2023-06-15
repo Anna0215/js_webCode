@@ -1,0 +1,546 @@
+.dep-info{
+	min-height: 163px;
+	width: 100%;
+	background: #BF0000;
+	overflow: hidden;
+	margin-top: 77px;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	line-height: 1;
+}
+.dep-info img{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 20px;
+}
+.dep-info .dep-name{
+	font-size: 26px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.dep-info .dep-about{
+	margin-top: 22px;
+	margin-left: 48px;
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	opacity: 0.8;
+	line-height: 1.2;
+}
+.title{
+	font-size: 22px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #BF0000;
+	line-height: 1;
+	margin-bottom: 21px;
+}
+.line{
+	width: 100%;
+	height: 2px;
+	background-color: rgba(240, 239, 239, 1);
+}
+.line .line-red{
+	width: 90px;
+	height: 2px;
+	background-color: rgba(191, 0, 0, 1);
+}
+.dep-main{
+	overflow: hidden;
+	padding-top: 53px;
+	box-sizing: border-box;
+}
+/* 党建风采 */
+.dep-banner{
+	float: left;
+	width: 580px;
+	margin-right: 40px;
+}
+.dep-banner .dep-banner-main{
+	margin-top: 37px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.dep-banner .dep-banner-main .img{
+	/* background: url(../../img/home/banner2.png) no-repeat;
+	background-size: cover; */
+	width: 580px;
+	height: 352px;
+	cursor: pointer;
+}
+.dep-banner .dep-banner-main .banner-prev{
+	position: absolute;
+	bottom: 15px;
+	left: 17px;
+	z-index: 2;
+	cursor: pointer;
+}
+.dep-banner .dep-banner-main .banner-next{
+	position: absolute;
+	bottom: 15px;
+	right: 17px;
+	z-index: 2;
+	cursor: pointer;
+}
+.dep-banner .dep-banner-main .button img{
+	width: 8px;
+	height: 15px;
+}
+.dep-banner .dep-banner-main .img-title{
+	position: absolute;
+	bottom: 0;
+	height: 45px;
+	width: 580px;
+	background-color: rgba(0, 0, 0, .45);
+	line-height: 45px;
+	text-align: center;
+}
+.dep-banner .dep-banner-main .img-title a{
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	display: inline-block;
+	width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dep-banner .dep-banner-main .swiper-container{
+	width: 580px;
+	height: 352px;
+}
+/* 党建风采 */
+/* 党务公开 */
+.dep-news{
+	float: left;
+	width: 580px;
+}
+.dep-news .dep-news-item{
+	line-height: 1;
+	display: block;
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	margin-top: 28px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dep-news .dep-news-item:first-child{
+	margin-top: 40px;
+}
+/* 党务公开 */
+/* 党建应用 */
+.dep-app{
+	width: 580px;
+	float: left;
+	margin-right: 40px;
+}
+.dep-app .dep-app-main{
+	box-sizing: border-box;
+	padding-left: 16px;
+	padding-top: 61px;
+	overflow: hidden;
+}
+.dep-app .dep-app-main .swiper-container{
+	height: 300px;
+}
+.dep-app .dep-app-main .dep-app-item{
+	float: left;
+	text-align: center;
+	margin-right: 16px;
+	min-width: 96px;
+	margin-bottom: 48px;
+	cursor: pointer;
+}
+.dep-app .dep-app-main .dep-app-item img{
+	width: 61px;
+	height: 61px;
+	margin-bottom: 11px;
+}
+.dep-app .dep-app-main .dep-app-item .dep-app-name{
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+}
+/* 党建应用 */
+/* 党员排名 */
+.dep-rank{
+	width: 580px;
+	float: left;
+}
+.dep-rank .title i{
+	display: inline-block;
+	width: 1px;
+	height: 15px;
+	background-color: #dcdcdc;
+	margin: 0 25px;
+}
+.dep-rank .dep-rank-change{
+	float: right;
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #989898;
+	cursor: pointer;
+}
+.dep-rank .dep-rank-active{
+	color: #BF0000;
+}
+.dep-rank .dep-rank-list .dep-rank-item{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.dep-rank .dep-rank-list .dep-rank-item:first-child{
+	margin-top: 39px;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-text{
+	line-height: 1;
+	float: left;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-img{
+	width: 24px;
+	height: 30px;
+	margin-right: 17px;
+	float: left;
+	margin-top: 10px;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-num{
+	float: left;
+	margin-right: 25px;
+	margin-left: 7px;
+	font-size: 20px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	font-style: italic;
+	color: #282828;
+	line-height: 50px;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-user{
+	width: 50px;
+	height: 50px;
+	border-radius: 1000px;
+	margin-right: 15px;
+	float: left;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-name{
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	margin-bottom: 14px;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-dep{
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #989898;
+}
+.dep-rank .dep-rank-list .dep-rank-item .dep-rank-point{
+	float: right;
+	padding: 0 15px;
+	height: 30px;
+	background-color: rgba(233, 85, 73, .1);
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 10px;
+	color: #E95549;
+	border-radius: 5px;
+}
+.dep-rank-list {
+	height: 329px;
+	overflow: auto;
+}
+.dep-rank-list .layui-flow-more{
+	text-align: center;
+}
+
+
+.dep-rank-list::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 8px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 8px;
+}
+
+.dep-rank-list::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 2px;
+	background: #c1c1c1;
+
+}
+
+.dep-rank-list::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	border-radius: 2px;
+	background: transparent;
+}
+/* 党员排名 */
+/* 党的各项工作 */
+.dep-job{}
+.dep-job .dep-job-nav{
+	margin-top: 34px;
+	overflow: hidden;
+	margin-bottom: 48px;
+}
+.dep-job .dep-job-nav .dep-job-nav-item{
+	width: 163px;
+	height: 42px;
+	background: #F8F8F8;
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 42px;
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	cursor: pointer;
+	float: left;
+	margin-right: 44px;
+}
+.dep-job .dep-job-nav .dep-job-nav-item:hover{
+	background-color: rgba(233, 85, 73, .1);
+	color: #E95549;
+}
+.dep-job .dep-job-nav .dep-job-nav-item:nth-child(6n+6){
+	margin-right: 0;
+}
+.dep-job .dep-job-nav .dep-job-nav-active{
+	background-color: rgba(233, 85, 73, .1);
+	color: #E95549;
+}
+.dep-job .dep-job-list{}
+.dep-job .dep-job-list .dep-job-list-item{
+	line-height: 1;
+	display: block;
+	min-width: 48%;
+	max-width: 48%;
+	float: left;
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	margin-right: 2%;
+	margin-bottom: 28px;
+	overflow: hidden;
+	max-height: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dep-job .dep-job-list .dep-job-list-item:nth-child(2n+2){
+	margin-right: 0;
+}
+/* 党的各项工作 */
+/* 云党课 */
+
+.dep-study .study-top {
+	margin-top: 42px;
+	overflow: hidden;
+}
+
+.dep-study .study-top .study-top-title {
+	width: 110px;
+	height: 265px;
+	background: #BF0000;
+	border-radius: 10px 0px 0px 10px;
+	float: left;
+	text-align: center;
+}
+
+.dep-study .study-top .study-top-title span {
+	margin: 0 auto;
+	display: block;
+	font-size: 32px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #FFFFFF;
+	width: 32px;
+	margin-top: 50px;
+	line-height: 40px;
+}
+
+.dep-study .study-top .study-top-list {
+	width: 1090px;
+	height: 265px;
+	background: #F8F8F8;
+	border-radius: 0px 10px 10px 0px;
+	float: left;
+	position: relative;
+}
+
+.dep-study .study-top .study-top-list .study-change {
+	cursor: pointer;
+	position: absolute;
+	top: 118px;
+}
+
+.dep-study .study-top .study-top-list .study-top-list-box {
+	width: 870px;
+	height: 210px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.dep-study .study-top .study-top-list .study-top-list-item {
+	/*float: left;*/
+	width: 254px;
+	/* margin-right: 59px; */
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.dep-study .study-top .study-top-list .study-top-list-item img {
+	width: 254px;
+	height: 144px;
+	border-radius: 10px;
+	margin-bottom: 22px;
+}
+
+.dep-study .study-top .study-top-list .study-top-list-item p {
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	line-height: 23px;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* 云党课 */
+/* 党建大数据 */
+.dep-data{
+	line-height: 1;
+}
+.dep-data .dep-data-title{
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+	line-height: 1;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #E9E9E9;
+}
+.dep-data .dep-data-title span{
+	font-size: 12px;
+	color: rgba(152, 152, 152, 1);
+	line-height: 1;
+	margin-left: 2px;
+}
+.dep-data .line{
+	margin-bottom: 53px;
+}
+.dep-data .dep-data-big{
+	box-sizing: border-box;
+	padding: 20px;
+	float: left;
+	width: 790px;
+	height: 283px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin-left: 6px;
+	margin-bottom: 6px;
+	box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+}
+.dep-data .dep-data-small{
+	box-sizing: border-box;
+	padding: 20px;
+	float: left;
+	width: 184px;
+	height: 281px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	margin-left: 16px;
+	box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(232,232,232,0.75);
+}
+.dep-data .dep-data-small .dep-data-small-red{
+	text-align: center;
+	font-size: 26px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #BF0000;
+	margin-top: 51px;
+}
+.dep-data .dep-data-small .dep-data-small-red span{
+	font-size: 16px;
+}
+.dep-data .dep-data-small .dep-data-small-text{
+	text-align: center;
+	font-size: 10px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #989898;
+	margin-bottom: 16px;
+	transform: scale(.8);
+}
+.dep-data .dep-data-small .dep-data-small-black{
+	text-align: center;
+	font-size: 18px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+}
+.dep-data .dep-data-small .dep-data-small-black span{
+	font-size: 12px;
+}
+.dep-data .dep-data-small .dep-data-small-box{
+	float: left;
+	text-align: center;
+	margin-top: 69px;
+	min-width: 70px;
+}
+.dep-data .dep-data-small .dep-data-small-black span{
+	font-size: 12px;
+}
+.dep-data .dep-data-line1{
+	float: left;
+	display: block;
+	height: 69px;
+	border-right: 1px dotted #CBCBCB;
+	margin: 0 1px;
+	margin-top: 58px;
+}
+.dep-data .dep-data-line2{
+	display: block;
+	width: 88px;
+	margin: 36px auto 28px;
+	border-bottom: 1px dotted #CBCBCB;
+}
+.dep-data .dep-data-big .dep-big-box{
+	float: left;
+}
+.dep-data .dep-data-big .dep-big-box .dep-big-title{
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #282828;
+	margin-top: 24px;
+}
+.dep-data .dep-data-big .dep-big-box .dep-big-item{
+	width: 249px;
+	height: 169px;
+	border-right: 1px solid #E9E9E9;
+}
+.dep-data .dep-data-big .dep-big-box:last-child .dep-big-item{
+	border-right: 0;
+}
+/* 党建大数据 */

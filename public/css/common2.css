@@ -1,0 +1,216 @@
+.flex{
+    display:flex;
+    flex-direction:row;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-end{
+    justify-content:flex-end;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-bottom{
+    align-items:flex-end;
+}
+.flex-inline-item{
+    align-items:center;
+}
+.flex-inline-item-end{
+    align-items:flex-end;
+}
+.flex-between{
+    justify-content:space-between;
+}
+.flex-around{
+    justify-content:space-around;
+}
+.ellipse{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.ellipse-line2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.ellipse-line3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.color-desc{
+    color:#bbb;
+}
+/*自定义layui*/
+/*按钮*/
+.layui-btn {
+    background-color: #d81e06;
+}
+.layui-btn.layui-btn-primary {
+    border-color: #C9C9C9;
+    background-color: #fff;
+    color: #555;
+}
+.layui-btn.layui-btn-normal {
+    background-color: #1E9FFF;
+}
+.layui-btn.layui-btn-warm {
+    background-color: #FFB800;
+}
+.layui-btn.layui-btn-danger {
+    background-color: #FF5722;
+}
+.layui-btn-group .layui-btn-primary:hover {
+    color: #d81e06;
+}
+.layui-form-checked[lay-skin=primary] i {
+    border-color: #E05349!important;
+    background-color: #E05349;
+    color: #fff;
+}
+
+
+
+.layui-elem-quote {
+    border-left: 5px solid #d81e06;
+}
+
+.layui-timeline-axis {
+    color: #E05349;
+}
+/*表单*/
+.layui-form-onswitch {
+    border-color: #E05349;
+    background-color: #E05349;
+}
+.layui-form-select dl dd.layui-this {
+    background-color: #E05349;
+    color: #fff;
+}
+.layui-form-radio:hover *, .layui-form-radioed, .layui-form-radioed>i {
+    color: #E05349;
+}
+/*分页*/
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: rgb(216, 30, 6);
+}
+.layui-laypage a:hover {
+    color: #d81e06;
+}
+/*导航栏*/
+.layui-nav-tree .layui-nav-bar {
+    background-color: #d81e06;
+}
+/*选项卡*/
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-bottom: 2px solid #E05349;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    background-color: #d81e06;
+}
+
+
+/** 20211129 **/
+body {
+    background-color: #F1F1F3;
+}
+#search_form .layui-input {
+    height: 33px;
+}
+.admin-main {
+    margin: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+}
+.layui-btn-sm {
+    height: 32px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 32px;
+    padding: 0px 18px;
+}
+.layui-table-view {
+    border: 0;
+    margin-top: 30px;
+}
+.layui-table {
+    color: #5A5A5A;
+}
+.layui-table-view .layui-table th {
+    border: 0;
+    height: 43px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #282828;
+    line-height: 14px;
+}
+.layui-table-view .layui-table tr{
+    height: 43px;
+}
+.layui-table-box .layui-btn {
+    background-color: transparent;
+    color: #E21A17;
+    border-color: transparent;
+}
+.layui-table-view .layui-table-page{
+    padding-top: 30px;
+    height: auto;
+}
+#search_form .layui-btn, #search_form .layui-input{
+    margin: 6px 0 0;
+}
+.admin-nav-card .layui-tab-title{
+    background-color: #ffffff;
+}
+.layui-elem-quote {
+    margin-bottom: 20px;
+}
+.layui-tab-title .layui-this, .layui-tab-title .layui-this a {
+    color: #E21A17;
+}
+
+.layui-form-radio:hover *, .layui-form-radioed, .layui-form-radioed>i {
+    color: #D81E10;
+}
+
+.layui-form-label {
+    font-size: 16px;
+    color: #282828;
+}
+
+.page-header {
+    height: 54px;
+    background: #F7F7F7;
+    box-shadow: 0px 2px 3px 0px rgba(117, 117, 117, 0.14);
+    position: relative;
+    text-align: center;
+    padding: 11px 35px;
+    box-sizing: border-box;
+    line-height: 32px;
+}
+.page-header .page-header-title {
+    font-size: 20px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #282828;
+    line-height: 32px;
+}
+.page-header .page-header-back-btn {
+    border-color: #C9C9C9;
+    background-color: #fff;
+    color: #555;
+    position: absolute;
+    left: 30px;
+    top: 11px;
+}

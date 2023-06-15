@@ -1,0 +1,228 @@
+.header {
+	height: 72px;
+	background-color: rgba(188, 0, 0, 1);
+	position: relative;
+}
+
+.header .h-content {
+	height: 72px;
+}
+
+.header .h-content .h-logo,
+.header .h-content .h-nav,
+.header .h-content .h-menu {
+	height: 72px;
+	line-height: 72px;
+}
+
+.header .h-content .h-nav ul li {
+	line-height: 72px;
+}
+
+.header .h-content .h-nav ul li a {
+	color: #fff;
+}
+
+.header .h-content .h-nav ul li a:hover {
+	color: #fff;
+}
+
+.header .h-content .h-menu .h-menu-item .h-menu-text {
+	color: #fff;
+}
+
+.header .h-content .h-menu .h-menu-item {
+	line-height: 72px;
+}
+
+.logo1 {
+	width: 124px;
+	height: 30px;
+}
+
+.logo2 {
+	width: 117px;
+	height: 32px;
+}
+
+.header .h-content .h-nav {
+	margin-left: 0;
+	margin-right: 150px;
+}
+
+/* 内容 */
+.right-content {
+	line-height: 1;
+	width: 953px;
+	float: left;
+	background-color: rgba(248, 248, 248, 1);
+}
+
+.right-content .r-c-main {
+	margin: 0 43px;
+}
+
+.right-content .r-c-title {
+	background-color: rgba(241, 241, 241, 1);
+	height: 67px;
+	line-height: 67px;
+	font-size: 22px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+	padding-left: 41px;
+}
+
+.right-content .r-c-title2 .r-c-redblock {
+	width: 5px;
+	height: 19px;
+	background: #BF0000;
+	display: block;
+	float: left;
+	margin-right: 24px;
+}
+
+.right-content .r-c-title2 span {
+	font-size: 20px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #282828;
+}
+
+.right-content .r-c-info,
+.right-content .r-c-item,
+.right-content .r-c-img {
+	margin-top: 40px;
+}
+
+.right-content .r-c-info {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.right-content .r-c-info .r-c-info-content {
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #5A5A5A;
+	margin-top: 24px;
+	margin-bottom: 43px;
+	line-height: 1.5;
+}
+
+.right-content .r-c-item {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.right-content .r-c-item-content {
+	margin-top: 24px;
+	margin-bottom: 43px;
+}
+
+.right-content .r-c-item-content p {
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #5A5A5A;
+	line-height: 26px;
+}
+
+.right-content .r-c-img .r-c-img-content {
+	text-align: center;
+}
+
+.right-content .r-c-img img {
+	/*display: block;
+	margin: 33px auto;
+	max-width: 100%;*/
+}
+
+.left-menu {
+	width: 222px;
+	float: left;
+	margin-right: 25px;
+	background-color: #eeeeee;
+	line-height: 1;
+}
+
+.left-menu .l-menu-parent {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #464646;
+	box-sizing: border-box;
+	padding-left: 27px;
+	background-color: RGBA(248, 248, 248, 1);
+	cursor: pointer;
+	position: relative;
+}
+
+.left-menu .l-menu-parent .img {
+	background-image: url(../img/application/menu-icon.png);
+	position: absolute;
+	width: 10px;
+	height: 6px;
+	right: 21px;
+	top: 22px;
+	transition: all .2s;
+	transform: rotate(180deg);
+}
+
+.left-menu .l-menu-parent:hover {
+	background: #BF0000;
+	color: #fff;
+}
+
+.left-menu .l-menu-parent:hover .img {
+	background-image: url(../img/application/menu-icon2.png);
+}
+
+.left-menu .l-menu-child {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	padding: 0 22px;
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #464646;
+}
+
+.left-menu .l-menu-child .l-menu-child-dot {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background: #989898;
+	border-radius: 50%;
+	margin-bottom: 3px;
+	margin-right: 16px;
+	margin-left: 5px;
+}
+
+.left-menu .l-menu-child:hover {
+	color: rgba(191, 0, 0, 1);
+}
+
+.left-menu .l-menu-child:hover .l-menu-child-dot {
+	background: rgba(191, 0, 0, 1);
+}
+
+.left-menu .l-menu-parent-active {
+	background: #BF0000;
+	color: #fff;
+}
+
+.left-menu .l-menu-parent-active .img {
+	background-image: url(../img/application/menu-icon2.png);
+	/* transform: rotate(180deg); */
+}
+
+.left-menu .l-menu-child-active {
+	color: rgba(191, 0, 0, 1);
+}
+
+.left-menu .l-menu-child-active .l-menu-child-dot {
+	background: rgba(191, 0, 0, 1);
+}

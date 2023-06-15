@@ -1,0 +1,43 @@
+/**
+ * 对weui的样式覆盖 修改
+ */
+.dj-dialog .weui-actionsheet {
+	box-sizing: border-box;
+	margin: 0 0.48rem;
+	width: 9.04rem;
+	bottom: 0.85rem;
+	background-color: transparent;
+}
+
+.dj-dialog .weui-actionsheet__cell {
+	height: 1.29rem;
+	padding: 0;
+	line-height: 1.29rem;
+	font-size: 0.43rem;
+}
+
+.dj-dialog .weui-actionsheet__action {
+	border-radius: 6px;
+	margin-top: 0.25rem;
+}
+
+.dj-dialog .weui-actionsheet__menu {
+	border-radius: 6px;
+}
+
+.dj-dialog .weui-dialog__ft {
+	line-height: 44px;
+	font-size: 14px;
+}
+
+.dj-dialog .weui-dialog__hd {
+	padding: 0;
+}
+
+.dj-dialog .weui-dialog__btn {
+	font-weight: normal;
+}
+
+.dj-dialog .weui-dialog__btn_primary {
+	color: #E74744;
+}

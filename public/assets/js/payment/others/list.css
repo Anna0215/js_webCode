@@ -1,0 +1,73 @@
+.info{
+    margin-top: 15px;
+}
+.list{
+
+}
+.list h2{
+}
+.list li{
+    background: #fff;
+    border-radius: 6px;
+    padding:15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.list li .left{
+    float: left;
+    width:calc(100% - 140px);
+}
+.list li .right{
+    float: right;
+    padding-right: 16px;
+    background: url("/assets/images/right.png") no-repeat right center;
+    background-size: 7px 13px;
+}
+.list li .title{
+    font-size: 16px;
+    color:#282828;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.list li .labels{
+    overflow: hidden;
+}
+.list li .labels span{
+    display: block;
+    float: left;
+    border:1px solid #e5e5e5;
+    padding:0 6px;
+    height:16px;
+    line-height: 16px;
+    border-radius: 8px;
+    font-size: 10px;
+    color:#999;
+    margin-right:6px;
+    margin-top: 6px;
+}
+.list li .money{
+    font-size: 20px;
+    color:#e74744;
+    font-weight: 600;
+    text-align: right;
+}
+.list li .money i{
+    font-size: 13px;
+    color:#e74744;
+    font-weight: 600;
+}
+.list li .time{
+    font-size: 12px;
+    color:#999;
+}
+.no{
+    padding:70px 0;
+}
+.no img{
+    width:89px;
+}
+.no p{
+    font-size: 16px;
+    color:#999;
+    margin-top: 18px;
+}

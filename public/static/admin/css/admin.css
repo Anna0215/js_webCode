@@ -1,0 +1,6 @@
+table.table-striped th,table.table-striped td,table.table-striped td input { text-align: center; }
+.dataTables_filter .form-control { width: 300px}
+.table-responsive { overflow-x: hidden;}
+.dataTables_wrapper { padding-bottom: 0}
+table.dataTable { margin-bottom: 16px !important;}
+div.dataTables_info {padding-top:5px;}

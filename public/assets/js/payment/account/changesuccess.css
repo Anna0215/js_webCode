@@ -1,0 +1,29 @@
+.changesuccess{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding:130px 0;
+    position: absolute;
+    left:0;
+    top:0;
+    box-sizing: content-box;
+    margin-top:74px;
+}
+.changesuccess img{
+    width:52px;
+}
+.changesuccess .txt{
+    font-size: 14px;
+    color:#666;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.changesuccess input{
+    width:180px;
+    height:40px;
+    line-height: 40px;
+    color:#fff;
+    font-size: 15px;
+    background: #e74744;
+    border-radius: 20px;
+}

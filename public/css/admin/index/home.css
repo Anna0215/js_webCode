@@ -1,0 +1,425 @@
+*{
+    line-height:1;
+}
+#app{
+    padding:0.25rem;
+}
+.to-do{
+    width:11.79rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.03rem;
+}
+.title{
+    margin:0.2rem 0.24rem;
+    font-size:0.19rem;
+}
+.line{
+    border-bottom:1px solid rgba(229,229,229,1);
+}
+.menu{
+    margin:0.26rem 0;
+}
+.to-do-menu{
+    margin-left:0.325rem;
+    flex:0 0 1.4rem;
+    cursor:pointer;
+}
+.to-do-menu img{
+    width:0.45rem;
+    height:0.45rem;
+    margin-top:0.09rem;
+    margin-bottom:0.15rem;
+}
+.to-do-name{
+    font-size:0.16rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(71,71,71,1);
+    line-height:1;
+}
+.img-box{
+    position:relative;
+}
+.bubble{
+    width:0.18rem;
+    height:0.18rem;
+    background:rgba(231,71,68,1);
+    border:0.01rem solid rgba(255,255,255,1);
+    border-radius:50%;
+    font-size:0.1rem;
+    color:#fff;
+    position:absolute;
+    top:0;
+    right:-0.09rem;
+}
+/*概况*/
+.main-box{
+    margin-top:0.25rem;
+    width:11.79rem;
+    /*height:14.71rem;*/
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.03rem;
+}
+.basic-title{
+    margin-top:0.25rem;
+    margin-bottom:0.2rem;
+}
+.title-img{
+    margin:0 0.24rem;
+    width:0.24rem;
+    height:0.24rem;
+}
+.basic-title-text{
+    font-size:0.2rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(40,40,40,1);
+    line-height:1;
+}
+.basic-content{
+    padding:0.24rem;
+    padding-bottom:0;
+}
+.census{
+    /*width:2.65rem;*/
+    flex:1;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.03rem;
+    margin-right:0.24rem;
+}
+.census:nth-last-child(1){
+    margin-right:0;
+}
+.census-box{
+    margin-bottom:0.25rem;
+}
+.census-top{
+    margin-top:0.3rem;
+}
+.census-top2{
+    margin-top:0.2rem;
+    margin-left:0.2rem;
+    margin-bottom:0.22rem;
+}
+.census .num{
+    font-size:0.26rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(231,71,68,1);
+    line-height:1;
+    margin:0 0.65rem;
+}
+.census-top2 .payment-title{
+    font-size:0.16rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(40,40,40,1);
+    line-height:1;
+    margin-right:0.28rem;
+
+}
+.census-top2 .date{
+    position:relative;
+}
+.census-top2 .date .img-box{
+    position:absolute;
+    width:0.12rem;
+    height:0.25rem;
+    background:#fff;
+    padding:0 0.11rem;
+    padding-left:0.01rem;
+    right:0.01rem;
+}
+.census-top2 .date img{
+    width:0.12rem;
+    height:0.06rem;
+    right:0.11rem;
+}
+.census-top2 .date input{
+    box-sizing: border-box;
+    width:1.08rem;
+    height:0.3rem;
+    outline-style: none ;
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.04rem;
+    padding-left:0.13rem;
+    line-height:0.12rem;
+    font-size:0.12rem;
+    color:#989898;
+    cursor:pointer;
+    font-family: 'regular';
+}
+.census .census-title{
+    margin-top:0.14rem;
+    font-size:0.14rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(152,152,152,1);
+    line-height:1;
+}
+.census-bottom{
+    margin-top:0.3rem;
+    width:100%;
+}
+.census .pie{
+    /*margin-top:0.34rem;*/
+    width:100%;
+    flex:auto;
+}
+.mini-num-box{
+    flex:0 0 50%;
+    padding:0.05rem 0;
+    margin-bottom:0.2rem;
+}
+.mini-num-box:nth-child(odd){
+    border-right:0.01rem dashed rgba(229,229,229,1);;
+    box-sizing: border-box;
+}
+.mini-num-box:nth-last-child(1){
+    border-right:none !important;
+}
+.mini-num{
+    font-size:0.18rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(71,71,71,1);
+    line-height:1;
+}
+.mini-num2{
+    font-size:0.18rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(71,71,71,1);
+    line-height:1;
+}
+.mini-title{
+    margin-top:0.14rem;
+    font-size:0.14rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(152,152,152,1);
+    line-height:1;
+}
+.mini-title2{
+    margin-top:0.14rem;
+    font-size:0.14rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(152,152,152,1);
+    line-height:1;
+}
+/*组织关系*/
+.dep-box{
+    margin-bottom:0.24rem;
+}
+.dep-title{
+    margin-top:0.25rem;
+}
+.dep-title-text{
+    font-size:0.18rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(40,40,40,1);
+    line-height:1;
+}
+.dep-time-title-text{
+    font-size:0.16rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(71,71,71,1);
+    line-height:1;
+    margin-right:0.13rem;
+}
+.dep-title .date{
+    position:relative;
+}
+.dep-title .date .img-box{
+    position:absolute;
+    width:0.12rem;
+    height:0.25rem;
+    background:#fff;
+    padding:0 0.11rem;
+    padding-left:0.01rem;
+    right:0.01rem;
+}
+.dep-title .date img{
+    width:0.12rem;
+    height:0.06rem;
+    right:0.11rem;
+}
+.dep-title .date input{
+    box-sizing: border-box;
+    width:1.5rem;
+    height:0.3rem;
+    outline-style: none ;
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.04rem;
+    padding-left:0.13rem;
+    line-height:0.12rem;
+    font-size:0.12rem;
+    color:#989898;
+    cursor:pointer;
+    font-family: 'regular';
+}
+.dep-content{
+    margin-top:0.25rem;
+}
+.pie-box{
+    flex:auto;
+}
+.table-box{
+    width:8.36rem;
+}
+.layui-table, .layui-table-view{
+    margin:0;
+}
+.table1{
+    background:rgba(234,240,242,1);
+    border:0.01rem solid rgba(229,229,229,1);
+    opacity:0.79;
+    border-radius:0.03rem;
+    margin-bottom:0.08rem !important;
+}
+.table2 tr:nth-child(even){
+    background:rgba(250,250,250,1);
+    opacity:0.9;
+}
+.table1,.table2{
+    width:8.36rem;
+}
+.layui-table td, .layui-table th {
+    min-height: 0.37rem;
+    padding: 0.12rem 0.15rem;
+
+    width:20%;
+    height:0.37rem;
+    box-sizing: border-box;
+    font-size:0.14rem;
+    font-family:'regular';
+    font-weight:500;
+    color:rgba(71,71,71,1);
+    line-height:1;
+}
+
+/*党员基础*/
+.part-basic{
+    margin:0.24rem 0;
+}
+.par-basic-title{
+    font-size:0.18rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(40,40,40,1);
+    line-height:1;
+}
+.part-content{
+    margin:0.24rem 0;
+}
+.part-chart-box{
+    height:2.56rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.03rem;
+    margin-right:0.24rem;
+    flex:1;
+}
+.part-chart-box:nth-last-child(1){
+    margin-right:0;
+}
+.part-title{
+    margin:0.2rem 0;
+    margin-left:0.2rem;
+}
+.part-title-text{
+    color:#474747;
+    font-size:0.16rem;
+    font-weight:500;
+    line-height:1;
+    margin-bottom:0.12rem;
+}
+.desc{
+    font-size:0.14rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(152,152,152,1);
+    line-height:1;
+}
+
+/*领导班子*/
+.leader-box{
+    margin:0.24rem 0;
+    /*margin-bottom:0.24rem;*/
+}
+.arrow{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:0.67rem;
+    cursor:pointer;
+}
+.arrow-left{
+    left:-0.67rem;
+}
+.arrow-right{
+    right:-0.67rem;
+}
+.leader-title{
+    font-size:0.18rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(40,40,40,1);
+    line-height:1;
+}
+.leader-content{
+    margin:0 0.43rem;
+    position:relative;
+}
+.leader-user{
+    /*margin:0.24rem 0;*/
+    margin-top:0.24rem;
+    margin-bottom: 0;
+    margin-right:1.28rem;
+    width:1.06rem;
+    cursor:pointer;
+}
+.leader-user:nth-child(5n){
+    margin-right:0;
+}
+.user-img{
+    width:1.06rem;
+    height:1.47rem;
+}
+.user-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.nickname{
+    margin:0.15rem 0;
+    font-size:0.16rem;
+    font-family:PingFang SC;
+    font-weight:500;
+    color:rgba(71,71,71,1);
+    line-height:1;
+}
+.post{
+    font-size:0.16rem;
+    font-family:PingFang SC;
+    font-weight:400;
+    color:rgba(152,152,152,1);
+    line-height:1;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+#start-time,#end-time{
+    background:url('/images/home/select.png') 1.2rem 50% no-repeat;
+    background-size:0.12rem 0.05rem;
+}
+#payment-date{
+    background:url('/images/home/select.png') 0.8rem 50% no-repeat;
+    background-size:0.12rem 0.05rem;
+}
