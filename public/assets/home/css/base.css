@@ -1,31 +1,77 @@
-.w1200 {
-	width: 1200px;
-	margin: 0 auto;
-}
-
+/* add */
+.page_box {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+/* 头部导航 */
+.section_2 {
+	box-shadow: 0px 5px 10px 0px rgba(72, 15, 15, 0.22);
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	height: 65px;
+	justify-content: space-between;
+  }
+  
+  .image_2 {
+	width: 168px;
+	height: 41px;
+	margin: 12px 0 0 122px;
+  }
+  
+  .text-wrapper_4 {
+	line-height: 65px;
+    margin-right: 200px;
+  }
+  .text_14{
+	display: flex;
+	span{
+		font-size: 20px;
+		font-family: Source Han Sans CN;
+		font-weight: 500;
+		color: #333333;
+		margin: 0px 15px 0px 15px;
+	}
+	a{
+		font-size: 20px;
+		font-family: Source Han Sans CN;
+		font-weight: 500;
+		color: #333333;
+	}
+	a:hover{
+		cursor: pointer;
+		color:#D60D0B;
+	}
+  }
+/* 头部导航 end*/
 /* 通用头部 start */
 .header {
 	width: 100%;
 	min-width: 1200px;
-	height: 77px;
-	background: rgba(255, 255, 255, .8);
+	height: 65px;
+	background: rgba(255, 255, 255, 0);
 	position: absolute;
-	top: 0;
+	top: 389px;
 	z-index: 99;
+	background-image: url("../img/header_title.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
 }
 
 .header .h-content {
-	height: 77px;
+	height: 65px;
 }
 
 .header .h-content .h-logo,
 .header .h-content .h-nav,
 .header .h-content .h-menu {
 	float: left;
-	height: 77px;
 	vertical-align: middle;
 	display: table-cell;
-	line-height: 77px;
 }
 
 .header .h-content .h-menu {
@@ -40,14 +86,11 @@
 }
 
 .logo2 {
-	width: 119px;
-	height: 28px;
+	width: 199px;
+	height: 58px;
 }
 
-.header .h-content .h-nav {
-	margin-left: 144px;
-	margin-right: 171px;
-}
+
 
 .header .h-content .h-nav ul {
 	/* float: left; */
@@ -55,8 +98,8 @@
 
 .header .h-content .h-nav ul li {
 	float: left;
-	line-height: 77px;
-	margin-right: 29px;
+	line-height: 65px;
+	margin-right: 80px;
 }
 
 .header .h-content .h-nav ul li:last-child {
@@ -64,27 +107,25 @@
 }
 
 .header .h-content .h-nav ul li a {
-	font-size: 14px;
+	font-size: 24px;
 	font-family: Source Han Sans CN;
 	font-weight: 400;
-	color: #464646;
+	color: #FFFFFF;
 }
 
 .header .h-content .h-nav ul li a:hover {
-	font-size: 14px;
-	font-family: Source Han Sans CN;
-	font-weight: 400;
-	color: #BF0000;
+	border-bottom: 4px solid #fff;
+	padding-bottom: 11px;
 }
 
-.header .h-content .h-nav ul li .active {
-	color: #BF0000;
-}
+/* .header .h-content .h-nav ul li .active {
+	
+} */
 
 
 .header .h-content .h-menu .h-menu-item {
 	float: left;
-	line-height: 77px;
+	line-height: 65px;
 	margin-right: 33px;
 }
 
@@ -93,17 +134,17 @@
 }
 
 .header .h-content .h-menu .h-menu-item img {
-	width: 13px;
-	height: 13px;
+	width: 17px;
+	height: 19px;
 	margin-right: 8px;
 	margin-top: -3px;
 }
 
 .header .h-content .h-menu .h-menu-item .h-menu-text {
-	font-size: 14px;
-	font-family: Source Han Sans CN;
-	font-weight: 400;
-	color: #464646;
+	font-size: 21px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 /* 通用头部 end */
@@ -128,8 +169,10 @@
 /* 通用banner部分  start */
 .banner {
 	width: 100%;
-	height: 873px;
+	height: 400px;
 	z-index: 0!important;
+	position: absolute;
+    top: 530px;
 }
 
 .banner .img {
@@ -304,3 +347,29 @@
 }
 
 /* 通用底部2 end */
+
+/* 返回顶部 */
+.top_btn{
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	right: 40px;
+	bottom: 100px;
+	background: #fff;
+	z-index: 9999;
+	padding: 12px;
+	cursor: pointer;
+}
+.top_btn img{
+	display: block;
+	width: 28px;
+	height: 28px;
+	margin: 0 auto 10px;
+}
+/* 返回顶部end */
+.container_12{
+	max-width:1200px;
+	margin: 0 auto;
+
+}

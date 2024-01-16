@@ -1,0 +1,905 @@
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Language" content="utf-8" />
+    <meta content="all" name="robots" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>人民党建云—党建—人民网</title>
+    <meta name="description"
+        content="人民党建云是人民网面向基层党建的服务频道，由人民数据运营。目前入驻人民党建云的党组织已覆盖 31个省区市。人民党建云突出“服务”属性，在服务频道的定位基础上，以大数据、数字化等新一代信息技术在党建工作的运用为目标，为党建工作探索新的道路和空间。" />
+    <meta name="keywords" content="人民党建云、智慧党建、党建信息化、党建热点、党员学习、党员教育培训" />
+    <link rel="stylesheet" href="./public/plugins/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./public/assets/home/swiper/idangerous.swiper2.7.6.css" />
+    <link rel="stylesheet" type="text/css" href="./public/assets/home/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./public/assets/home/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./public/assets/home/css/home.css" />
+    <style type="text/css">
+        #tong {
+            background-color: #fff;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+
+        #tong img {
+            width: 272px;
+            height: 272px;
+            margin-top: 42px;
+            margin-bottom: 10px;
+        }
+
+        #tong p {
+            font-size: 20px;
+            font-family: Source Han Sans CN;
+            font-weight: 400;
+            color: #464646;
+        }
+
+        .pagination {
+            position: absolute;
+            z-index: 20;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .position .position-item {
+            height: 380px;
+        }
+
+        .swiper-pagination-switch {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background: #555;
+            margin: 0 5px;
+            opacity: 0.8;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        .swiper-active-switch {
+            background: #CF2122;
+        }
+
+        /* 红色数字展厅 */
+        ._banner-wrapper_ktrs0_289 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1920px;
+            min-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297 {
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all .5s ease-out;
+            position: relative;
+            overflow: hidden;
+            width: 240px;
+            height: 397px;
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297 ._banner-title_ktrs0_314 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297 ._banner-item-modal_ktrs0_320 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* background: linear-gradient(180deg, rgba(255, 255, 255, .21) 9.33%, rgba(0, 0, 0, .6) 86.46%) */
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297 ._banner-active-line {
+            height: 2px;
+            background: #fff;
+            bottom: 18px;
+            width: 16px;
+            display: none;
+            position: absolute;
+            left: 50%;
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297 ._banner-title_ktrs0_314 {
+            bottom: 24px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297:not(:first-child) {
+            margin-left: 25px;
+        }
+
+        ._banner-wrapper_ktrs0_289 ._banner-item_ktrs0_297._active_ktrs0_344 ._banner-active-line {
+            display: inline-block
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page_box">
+        <div class="group_1">
+            <!-- 导航 -->
+            <div class="head_logo">
+                <img src="./public/assets/home/img/djy-logo1.png" alt="">
+            </div>
+            <div class="header">
+                <div class="h-content w1200">
+                    <div class="h-nav">
+                        <ul>
+                            <li><a href="#news" class="active">党建沉浸式解决方案</a></li>
+                            <li><a href="#special">智慧党建2.0平台</a></li>
+                            <!-- <li><a href="#hot">党建关注</a></li>
+                    <li><a href="#online_study">云党课</a></li> -->
+                            <li><a href="#otes_container">资讯动态</a></li>
+                            <!-- <li><a href="#orientation">平台定位</a></li> -->
+                            <li><a href="#organize">关于我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="h-menu">
+                        <div class="h-menu-item">
+                            <a href="/login/login">
+                                <img src="./public/assets/home/img/user2.png">
+                                <span class="h-menu-text">登录</span>
+                            </a>
+                        </div>
+                        <div class="h-menu-item">
+                            <a href="/login/join">
+                                <img src="./public/assets/home/img/join2.png">
+                                <span href="/login/join" class="h-menu-text">申请入驻</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播 -->
+            <div class="banner">
+                <!-- 轮播图 -->
+                <div class="news">
+                    <div class="news-carousel-content">
+                        <div class="swiper-container" id="news">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/441888/index.html"
+                                        title="第六届基层党建创新典型案例征集活动">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/112306af94f2191.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/448887/index.html"
+                                        title="党员学习园地">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/0938594d8f63220.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://cpc.people.com.cn/GB/68742/91141/index.html"
+                                        title="全国党建期刊博览">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/111255dbbfe4699.png"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangshi.people.com.cn/GB/437103/index.html"
+                                        title="党史知识问答自测">
+                                        <img src="https://djy.people.com.cn/uploads/20210820/81fcedab4720e78736e118b60fd4f348.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/426539/index.html"
+                                        title="党员发展工作流程">
+                                        <img src="https://djy.people.com.cn/uploads/20210820/951937b86241d28685825760b3cf8bd6.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-nav">
+                        <div class="news-nav-item news-active">
+                            <div class="news-nav-title" title="第六届基层党建创新典型案例征集活动">第六届基层党建创新典型案例征集活动</div>
+                            <div class="news-nav-info" title="基层党建创新案例征集">基层党建创新案例征集</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党员学习园地">党员学习园地</div>
+                            <div class="news-nav-info" title="@全体党员，学习时间到！">@全体党员，学习时间到！</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="全国党建期刊博览">全国党建期刊博览</div>
+                            <div class="news-nav-info" title="党建理论学习平台">党建理论学习平台</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党史知识问答自测">党史知识问答自测</div>
+                            <div class="news-nav-info" title=" 一起来答题吧"> 一起来答题吧</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党员发展工作流程">党员发展工作流程</div>
+                            <div class="news-nav-info" title="工作流程及文档下载">工作流程及文档下载</div>
+                            <p class="triangle"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--红色数字展厅 -->
+            <div class="red_num">
+                <div class="title">
+                    <h3 class="text">
+                        红色数字展厅
+                        <p>利用虚拟现实技术，精心打造“党建+沉浸式”SaaS服务平台</p>
+                </div>
+                <div class="red_con">
+
+                    <div id="accordion" class="_banner-wrapper_ktrs0_289">
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/lb_bg1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">互动空间</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/lb_bg1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">主题展示</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/lb_bg1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">公共广场</span><span
+                                class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/lb_bg1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">互动空间</span><span
+                                class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/lb_bg1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">数字文旅</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--更多解决方案 -->
+            <div class="jjfa_box">
+                <div class="title">
+                    <h3 class="text">更多解决方案</h3>
+                    <p>借助新技术应用，提供线上线下提供空间化元宇宙党建解决方案</p>
+                </div>
+                <div class="jjfa_con home-scene">
+                    <div class="col">
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">感应阅读</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">感应阅读</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">VR虚拟现实</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">VR虚拟现实</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">裸眼3D</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">裸眼3D</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">AR增强现实</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">AR增强现实</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">虚拟数字人</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">虚拟数字人</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">MR混合现实</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">MR混合现实</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">全息投影</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">全息投影</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_box">
+                            <div class="box_bg">
+                                <div class="item_title">感应阅读</div>
+                            </div>
+                            <div class="hover_img_con">
+                                <div class="hover_img_item">
+                                    <div class="hover-img-name">感应阅读</div>
+                                    <div class="hover-img-info">
+                                        <div class="hover-info-item">
+                                            云安全服务
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main w1200">
+            <!-- 平台定位 start -->
+            <div class="position" id="orientation">
+                <div class="title">
+                    <h3 class="text">平台定位</h3>
+                    <p>为各级党组织提供全场景能力支撑的、可高度定制的SaaS化技术和资源输出平台</p>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                         <img  src="./public/assets/home/img/position1.png">
+                    </div>
+                    <div class="position-item-title">汇聚权威党建资源</div>
+                    <div class="position-item-text">同步更新人民日报、人民网权威党建资讯，汇聚各类党建、干部、人才、党史等数据库、资料库，为用户提供权威、全面、及时的党建信息。</div>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                        <img src="./public/assets/home/img/position2.png">
+                    </div>
+                    <div class="position-item-title">量身打造方案</div>
+                    <div class="position-item-text">根据用户个性化需求定制开发，为党组织量身打造线上线下一体化、场景化的智慧党建解决方案。</div>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                        <img src="./public/assets/home/img/position3.png">
+                    </div>
+                    <div class="position-item-title">服务党员教育培训</div>
+                    <div class="position-item-text">聚合海量的视频云党课资源，提供可定制的学习资源；提供考评、排名、答题等功能，方便及时全面统计学习进度，评估学习效果。</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!-- 平台特色功能start -->
+            <div class="ptes_container" id="otes_container">
+                <div class="title">
+                    <h3 class="text">平台特色功能</h3>
+                    <p>模块按需定制，全方位打造“智慧党建”新时代</p>
+                    <div class="ljgd"><a href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                            target="_blank">了解更多></a></div>
+                </div>
+                <div >
+                    <img src="../public/assets/home/img/ptts-bg.png" alt="">
+                </div>
+                <div class="image_8 flex-col" id="element">
+                    <div class="text-wrapper_16 flex-row justify-between">
+                        <span class="text_60 ">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党组织咨询
+                            </a>
+                        </span>
+                        <span class="text_61">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/5.html"
+                                target="_blank">
+                                组织生活管理
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_17 flex-row justify-between">
+                        <span class="text_62">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党党组织管理
+                            </a>
+                        </span>
+                        <span class="text_63">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/5.html"
+                                target="_blank">
+                                组织生活发布
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_18 flex-row">
+                        <span class="text_64">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/2.html"
+                                target="_blank">
+                                党建门户
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_19 flex-row">
+                        <span class="text_65">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                奖惩管理
+                            </a>
+                        </span>
+                        <span class="text_66">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/2.html"
+                                target="_blank">
+                                党建热点
+                            </a>
+                        </span>
+                        <span class="text_67">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党组织管理
+                            </a>
+                        </span>
+                        <span class="text_68">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/3.html"
+                                target="_blank">
+                                在线考试
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_20 flex-row justify-between">
+                        <span class="text_69">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党员发展管理
+                            </a>
+                        </span>
+                        <span class="text_70">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/3.html"
+                                target="_blank">
+                                视频课程
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_21 flex-row">
+                        <span class="text_71">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                组织关系转换
+                            </a>
+                        </span>
+                        <span class="text_72">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党费缴纳
+                            </a>
+                        </span>
+                        <span class="text_73">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/3.html"
+                                target="_blank">
+                                在线学习
+                            </a>
+                        </span>
+                        <span class="text_74">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/3.html"
+                                target="_blank">
+                                云党课
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_22 flex-row justify-between">
+                        <span class="text_75">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党组织换届管理
+                            </a>
+                        </span>
+                        <span class="text_76">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/3.html"
+                                target="_blank">
+                                荣誉证书
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_23 flex-row">
+                        <span class="text_77">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                                target="_blank">
+                                党员管理
+                            </a>
+                        </span>
+                        <span class="text_78">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/6.html"
+                                target="_blank">
+                                民主投票
+                            </a>
+                        </span>
+                        <span class="text_79">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/7.html"
+                                target="_blank">
+                                荣誉展示
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_24 flex-row justify-between">
+                        <span class="text_80">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/6.html"
+                                target="_blank">
+                                通知公告
+                            </a>
+                        </span>
+                        <span class="text_81">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/7.html"
+                                target="_blank">
+                                书记信箱
+                            </a>
+                        </span>
+                    </div>
+                    <div class="text-wrapper_25 flex-row justify-between">
+                        <span class="text_82">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/6.html"
+                                target="_blank">
+                                调查问卷
+                            </a>
+                        </span>
+                        <span class="text_83">
+                            <a class="image_a flicker" href="https://djy.people.com.cn/function/detail/cat_id/7.html"
+                                target="_blank">
+                                政治生日祝福
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 资讯动态strat -->
+        <div class="block_9 flex-col">
+            <div class="box_20 flex-row">
+                <div class="section_4 flex-col"></div>
+                <div class="image-wrapper_5 flex-col">
+                    <img class="thumbnail_7" referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/pspjbvlr83hopk0jue7gzvw8id5vzibh6af16be6553-ba0c-474e-8ca9-5345d8e54f5e">
+                </div>
+                <span class="text_40">资讯动态</span>
+                <div class="image-wrapper_6 flex-col">
+                    <img class="thumbnail_8" referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/psv6r1yuzvpjli2ieo5k9kwex7uwsafyq61f5c4fe2-64e0-456a-b9a3-d7532692337e">
+                </div>
+                <div class="section_5 flex-col"></div>
+            </div>
+            <div class="box_21 flex-row justify-between">
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg2.png">
+                    </div>
+                </div>
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img  referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="box_22 flex-row justify-between">
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img  referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg2.png">
+                    </div>
+                </div>
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!-- foot -->
+        <div class="block_10 flex-col">
+            <div class="group_11 flex-row">
+                <div class="block_11 flex-col justify-between">
+                    <div class="box_18 flex-col">
+                        <div class="section_11 flex-col"></div>
+                    </div>
+                    <span
+                        class="paragraph_1">人民党建云是人民网的党建服务频道，由人民数据运营。目前入驻党组织已覆盖&nbsp;31个省区市。<br /><br />人民党建云突出“服务”属性，将努力建设成为权威党建资讯汇集、党建创新工作展示、智慧党建解决方案等于一体的综合党建服务频道。</span>
+                </div>
+                <div class="block_12 flex-col">
+                    <span class="text_57">联系我们</span>
+                    <span
+                        class="paragraph_2">地址：北京市朝阳区金台西路2号人民日报社新媒体大厦<br />电话：010-65367828<br />邮箱：djy&#64;peopledata.com.cn</span>
+                    <div class="text-wrapper_14 flex-col">
+                        <span class="text_58">立即咨询</span>
+                    </div>
+                </div>
+                <div class="image-text_2 flex-col justify-between">
+                    <img class="image_10" referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/psulngmx2xm77d6ghbwdamgd3xkz4kpet89e0e2252-4220-40fc-8504-09315e42ec32" />
+                    <span class="text-group_3">关注“人民党建云”</span>
+                </div>
+            </div>
+            <div class="xian"></div>
+            <div class="text-wrapper_26 flex-row">
+                <span
+                    class="text_59">Copyright&nbsp;©&nbsp;1997-2023&nbsp;by&nbsp;www.people.com.cn.&nbsp;All&nbsp;rights&nbsp;reserved</span>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script src="./public/js/jquery-3.6.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="/js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="./public/assets/home/swiper/idangerous.swiper2.7.6.min.js" type="text/javascript"
+        charset="utf-8"></script>
+    <script src="./public/plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        var indexBannerCount = parseInt('{:count($index_banner)}');
+        var joinOrgCount = parseInt('{:count($joinDepList)}');
+        $(function () {
+            var bannerSwiper = new Swiper('#banner', {
+                autoplay: indexBannerCount > 1 ? 5000 : 0, //可选选项，自动滑动
+                loop: true, //可选选项，开启循环
+                // pagination : '.pagination',
+                paginationClickable: true,
+                noSwiping: indexBannerCount === 1,
+            })
+            var newsSwiper = new Swiper('#news', {
+                autoplay: 5000, //可选选项，自动滑动
+                loop: true, //可选选项，开启循环
+                mode: 'vertical',
+                onlyExternal: true,
+                observer: true,
+                observeParents: true,
+                onSlideChangeStart: function (swiper) {
+                    console.log(newsSwiper.activeIndex);
+                    $('.news-nav-item').removeClass('news-active').eq(newsSwiper.activeIndex !== 6 ? newsSwiper.activeIndex - 1 : 0).addClass('news-active');
+                }
+            })
+            //红色数字展厅
+            $('#accordion > div').hover(function () {
+                var $this = $(this);
+                $this.stop().animate({ 'width': '726px' }, 500);
+                $('._banner-title_ktrs0_314', $this).stop(true, true).fadeIn();
+                // $('._banner-active-line', $this).stop(true, true).fadeOut();
+                $('._banner-item-modal_ktrs0_320', $this).stop(true, true).slideDown(500);
+                $('._banner-active-line', $this).stop(true, true).fadeIn();
+            },
+                function () {
+                    var $this = $(this);
+                    $this.stop().animate({ 'width': '240px' }, 1000);
+                    $('._banner-title_ktrs0_314', $this).stop(true, true).fadeIn();
+                    $('._banner-active-line', $this).stop(true, true).fadeOut(500);
+                    $('._banner-item-modal_ktrs0_320', $this).stop(true, true).slideUp(700);
+                }
+            );
+
+            //更多解决方案start
+            $('.col').hover(function (e) {
+                console.log()
+                $('.col').removeClass('col2')
+                $(this).addClass('col2');
+                let c = $(this).children()
+                c.hover(function (ev) {
+                    ev.preventDefault()
+                    $(".hover_img_con").removeClass('img_con_show')
+                    console.log($(this).children()[1])
+                    $(this).children().eq(1).addClass('img_con_show')
+                    // $(this).children()[1].show()
+                })
+            })
+            // end
+            // 平台特色功能
+            // const multiple = 1000;//此处值越小 那么元素变化的幅度会越大
+            // const mouseOverContainer = document.getElementsByTagName("body")[0];
+            // const element = document.getElementById("element");
+            
+            // function transformElement(x, y) {
+            // let box = element.getBoundingClientRect();
+            // let calcX = -(y - box.y - (box.height / 2)) / multiple;
+            // let calcY = (x - box.x - (box.width / 2)) / multiple;
+            
+            // element.style.transform  = "rotateX("+ calcX +"deg) "
+            //                         + "rotateY("+ calcY +"deg)";
+            // }
+            
+            // mouseOverContainer.addEventListener('mousemove', (e) => {
+            // window.requestAnimationFrame(function(){
+            //     transformElement(e.clientX, e.clientY);
+            // });
+            // });
+            
+            // mouseOverContainer.addEventListener('mouseleave', (e) => {
+            // window.requestAnimationFrame(function(){
+            //     element.style.transform = "rotateX(0) rotateY(0)";
+            // });
+            // });
+            // end
+            $('.news-nav-item').on('click', function (e) {
+                e.preventDefault();
+                //得到当前索引
+                var i = $(this).index();
+                $('.news-nav-item').removeClass('news-active').eq(i).addClass('news-active');
+                console.log(i);
+                newsSwiper.swipeTo(i, 300, false);
+                console.log(newsSwiper.activeIndex);
+            });
+
+            var studySwiper = new Swiper('#study', {
+                loop: false, //可选选项，开启循环
+                slidesPerGroup: 3,
+                slidesPerView: 3,
+            })
+            $('.study-prev').click(function () {
+                studySwiper.swipePrev();
+            });
+            $('.study-next').click(function () {
+                studySwiper.swipeNext();
+            });
+
+            // 点击热词
+            $('.hot-word').click(function () {
+                var id = $(this).data('id');
+                $.ajax({
+                    type: 'get',
+                    url: '{:url("Index/hotWordArticleList")}',
+                    data: {
+                        hot_word_id: id,
+                        first: 0,
+                        limit: "{$hotWordArticleListLimit}",
+                    },
+                    success: function (res) {
+                        $('#hot-article-wrapper').hide();
+                        $('#hot-word-article-wrapper').show();
+                        $('#hot-word-article-wrapper').html(res);
+                    },
+                });
+            });
+
+            // 热词文章列表返回
+            $('#hot-word-article-wrapper').on('click', '#hot-word-article-back', function () {
+                $('#hot-word-article-wrapper').hide();
+                $('#hot-article-wrapper').show();
+            });
+
+            layui.use(['layer', 'flow'], function () {
+                var layer = layui.layer;
+                var flow = layui.flow;
+
+                flow.lazyimg();
+
+                $('.study-top-list-item,.study-bottom-item').click(function () {
+                    var html = $('#tong');
+                    var id = $(this).data('id');
+                    var title = $(this).data('title');
+                    html.find('img').attr('src', '{:url("studyQRCode")}' + '?id=' + id + '&title=' + title)
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: ['auto'],
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: html
+                    });
+                });
+            });
+
+            var orgSwiper = new Swiper('#orgSwiper', {
+                autoplay: 5000,
+                loop: joinOrgCount / 12 > 1,
+                pagination: joinOrgCount / 12 > 1 ? '.pagination' : false,
+                paginationClickable: true,
+                noSwiping: joinOrgCount / 12 === 1,
+            })
+            $('.org-swiper-container .img-prev').click(function () {
+                orgSwiper.swipePrev();
+            });
+            $('.org-swiper-container .img-next').click(function () {
+                orgSwiper.swipeNext();
+            });
+        })
+    </script>
+</body>
+
+</html>

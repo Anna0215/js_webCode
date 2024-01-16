@@ -1,38 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="Content-Language" content="utf-8" />
     <meta content="all" name="robots" />
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>人民党建云—党建—人民网</title>
-    <meta name="description" content="人民党建云是人民网面向基层党建的服务频道，由人民数据运营。目前入驻人民党建云的党组织已覆盖 31个省区市。人民党建云突出“服务”属性，在服务频道的定位基础上，以大数据、数字化等新一代信息技术在党建工作的运用为目标，为党建工作探索新的道路和空间。" />
+    <meta name="description"
+        content="人民党建云是人民网面向基层党建的服务频道，由人民数据运营。目前入驻人民党建云的党组织已覆盖 31个省区市。人民党建云突出“服务”属性，在服务频道的定位基础上，以大数据、数字化等新一代信息技术在党建工作的运用为目标，为党建工作探索新的道路和空间。" />
     <meta name="keywords" content="人民党建云、智慧党建、党建信息化、党建热点、党员学习、党员教育培训" />
-    <link rel="stylesheet" href="./public/plugins/layui/css/layui.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="./public/assets/home/swiper/idangerous.swiper2.7.6.css" />
     <link rel="stylesheet" type="text/css" href="./public/assets/home/css/default.css" />
     <link rel="stylesheet" type="text/css" href="./public/assets/home/css/base.css" />
     <link rel="stylesheet" type="text/css" href="./public/assets/home/css/home.css" />
+    <link rel="stylesheet" href="./public/plugins/layui/css/layui.css" media="all" />
     <style type="text/css">
-        #tong{
+        #tong {
             background-color: #fff;
             width: 400px;
             height: 400px;
             text-align: center;
         }
-        #tong img{
+
+        #tong img {
             width: 272px;
             height: 272px;
             margin-top: 42px;
             margin-bottom: 10px;
         }
-        #tong p{
+
+        #tong p {
             font-size: 20px;
             font-family: Source Han Sans CN;
             font-weight: 400;
             color: #464646;
         }
+
         .pagination {
             position: absolute;
             z-index: 20;
@@ -40,9 +45,11 @@
             width: 100%;
             text-align: center;
         }
+
         .position .position-item {
-            height: 350px;
+            height: 380px;
         }
+
         .swiper-pagination-switch {
             display: inline-block;
             width: 8px;
@@ -54,629 +61,1133 @@
             border: 1px solid #fff;
             cursor: pointer;
         }
+
         .swiper-active-switch {
             background: #CF2122;
         }
+
+        /* 产品专区 */
+        .djy_cpbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1920px;
+            min-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297 {
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all .5s ease-out;
+            position: relative;
+            overflow: hidden;
+            width: 240px;
+            height: 397px;
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297 ._banner-title_ktrs0_314 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297 ._banner-item-modal_ktrs0_320 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* background: linear-gradient(180deg, rgba(255, 255, 255, .21) 9.33%, rgba(0, 0, 0, .6) 86.46%) */
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297 ._banner-active-line {
+            height: 4px;
+            background: #fff;
+            bottom: 15px;
+            width: 70px;
+            display: none;
+            position: absolute;
+            left: 46%;
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297 ._banner-title_ktrs0_314 {
+            bottom: 24px;
+            text-align: center;
+            color: #fff;
+            font-size: 22px
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297:not(:first-child) {
+            margin-left: 25px;
+        }
+
+        .djy_cpbox ._banner-item_ktrs0_297._active_ktrs0_344 ._banner-active-line {
+            display: inline-block
+        }
     </style>
+    <!-- <script src="./public/plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script> -->
 </head>
+
 <body>
-<!-- header start -->
-<div class="header">
-    <div class="h-content w1200">
-        <div class="h-logo">
-            <a href="/" style="display: inline-block;width: 119px;height: 28px;margin-top: 25px;">
-                <img src="./public/assets/home/img/djy-logo.png" class="logo2">
-            </a>
-            <a href="http://www.peopledata.com.cn" target="_blank" style="display: inline-block;width: 96px;height: 26px;margin-top: 26px;margin-left: 20px;">
-                <img src="./public/assets/home/img/people_logo.png" style="display: inline-block;width: 96px;height: 26px;">
-            </a>
-        </div>
-        <div class="h-nav" style="margin-left: 90px;margin-right: 0;">
-            <ul>
-                <li><a href="#news" class="active">党建资讯</a></li>
-                <li><a href="#special">专题专栏</a></li>
-                <li><a href="#hot">党建关注</a></li>
-                <li><a href="#online_study">云党课</a></li>
-                <li><a href="{:url('Index/partyBuildingApp/detail', [], false, false)}">党建应用</a></li>
-                <li><a href="#orientation">平台定位</a></li>
-                <li><a href="#organize">合作单位</a></li>
-            </ul>
-        </div>
-        <div class="h-menu">
-            <div class="h-menu-item">
-                <a href="/login/login">
-                    <img src="./public/assets/home/img/user.png">
-                    <span class="h-menu-text">登录</span>
-                </a>
-            </div>
-            <div class="h-menu-item">
-                <a href="/login/join">
-                    <img src="./public/assets/home/img/join.png">
-                    <span href="/login/join" class="h-menu-text">申请入驻</span>
-                </a>
+    <div class="page_box" id="vueApp">
+        <!-- 头部导航 -->
+        <div class="section_2 flex-row">
+            <img class="image_2" referrerpolicy="no-referrer" src="./public/assets/home/img/djy_toplogo.png" />
+            <div class="text-wrapper_4">
+                <ul class="text_14">
+                    <li>
+                        <a href="yyz.html">党建元宇宙</a><span>|</span>
+                        <a href="jw.html">纪委监委大数据监督研判平台</a><span>|</span>
+                        <a href="rmdy.html">人民德育</a><span>|</span>
+                        <a href="djy.html">党建品牌计划</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
-<!-- header end -->
-
-<!-- banner start-->
-<!-- <div class="banner">
-    <div class="swiper-container" id="banner">
-        <div class="swiper-wrapper">
-            {sql sql="SELECT * FROM `__PREFIX__index_banner` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,999" key="k" id='vo' cache='60' result="index_banner"}
-            <div class="swiper-slide swiper-no-swiping">
-                {if empty($vo.content)}
-                <div class="img" style="background-image: url('{$vo.pic}');"></div>
-                {else}
-                <a target="_blank" href="{$vo.content}">
-                    <div class="img" style="background-image: url('{$vo.pic}');"></div>
-                </a>
-                {/if}
-            </div>
-            {/sql}
-        </div>
-    </div>
-</div> -->
-<div class="banner">
-    <div class="swiper-container" id="banner">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-no-swiping">
-                <a target="_blank" href="https://mp.weixin.qq.com/s/2jIJk98x-EbyBN5bbPHDQQ">
-                    <div class="img" style="background-image: url('https://djyimg.peopledata.com.cn/0/20230404/165649753473562.jpg');"></div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- banner end -->
-
-<!-- 内容 start -->
-<div class="main w1200">
-    <!-- 新闻部分 start -->
-    <!-- <div class="news">
-        <div class="news-nav">
-            {sql sql="SELECT * FROM `__PREFIX__index_recommend` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,5" key="k" id='vo' cache='60' result="index_recommend"}
-            <div class="news-nav-item {if $k===0}news-active{/if}">
-                <div class="news-nav-title" title="{$vo.title}">{$vo.title}</div>
-                <div class="news-nav-info" title="{$vo.sub_title}">{$vo.sub_title}</div>
-                <p class="triangle"></p>
-            </div>
-            {/sql}
-        </div>
-        <div class="news-carousel-content">
-            <div class="swiper-container" id="news">
-                <div class="swiper-wrapper">
-                    {sql sql="SELECT * FROM `__PREFIX__index_recommend` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,5" key="k" id='vo' cache='60' result="index_recommend"}
-                    <div class="swiper-slide">
-                        <a target="_blank" href="{if !empty($vo.content)}{$vo.content}{else}javascript:void(0){/if}" title="{$vo.title}">
-                            <img src="{$vo.pic}" class="news-carousel-img">
-                        </a>
+        <div class="group_1">
+            <!-- 导航 -->
+            <div class="header">
+                <div class="h-content w1200">
+                    <div class="h-nav">
+                        <ul>
+                            <li><a href="#cpzq" class="active">产品专区</a></li>
+                            <li><a href="#special">党建课程</a></li>
+                            <li><a href="#orientation">智慧党建</a></li>
+                            <li><a href="#">资讯动态</a></li>
+                        </ul>
                     </div>
-                    {/sql}
-                </div>
-            </div>
-        </div>
-        <div class="news-list">
-            {sql sql="SELECT * FROM `__PREFIX__index_news` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,1" key="k" id='vo' cache='60'}
-            <a target="_blank" href="{:url('article/index_news_detail', ['id'=>$vo.id])}">
-                <div class="news-list-bigTitle">{$vo.title}</div>
-            </a>
-            {/sql}
-            {sql sql="SELECT * FROM `__PREFIX__index_news` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 1,1" key="k" id='vo' cache='60'}
-            <div class="news-list-hot">
-                <div class="news-list-hot-left">
-                    推荐
-                    <p class="triangle"></p>
-                </div>
-                <div class="news-list-hot-right">
-                    <a target="_blank" href="{:url('article/index_news_detail', ['id'=>$vo.id])}">{$vo.title}</a>
-                </div>
-            </div>
-            {/sql}
-            <ul class="news-list-ul">
-                {sql sql="SELECT * FROM `__PREFIX__index_news` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 2,5" key="k" id='vo' cache='60'}
-                <li><a target="_blank" href="{:url('article/index_news_detail', ['id'=>$vo.id])}"><span class="red-dot">·</span>{$vo.title}</a></li>
-                {/sql}
-            </ul>
-        </div>
-    </div> -->
-    <div class="news">
-        <div class="news-nav">
-            <div class="news-nav-item news-active">
-                <div class="news-nav-title" title="第六届基层党建创新典型案例征集活动">第六届基层党建创新典型案例征集活动</div>
-                <div class="news-nav-info" title="基层党建创新案例征集">基层党建创新案例征集</div>
-                <p class="triangle"></p>
-            </div>
-            <div class="news-nav-item ">
-                <div class="news-nav-title" title="党员学习园地">党员学习园地</div>
-                <div class="news-nav-info" title="@全体党员，学习时间到！">@全体党员，学习时间到！</div>
-                <p class="triangle"></p>
-            </div>
-            <div class="news-nav-item ">
-                <div class="news-nav-title" title="全国党建期刊博览">全国党建期刊博览</div>
-                <div class="news-nav-info" title="党建理论学习平台">党建理论学习平台</div>
-                <p class="triangle"></p>
-            </div>
-            <div class="news-nav-item ">
-                <div class="news-nav-title" title="党史知识问答自测">党史知识问答自测</div>
-                <div class="news-nav-info" title=" 一起来答题吧"> 一起来答题吧</div>
-                <p class="triangle"></p>
-            </div>
-            <div class="news-nav-item ">
-                <div class="news-nav-title" title="党员发展工作流程">党员发展工作流程</div>
-                <div class="news-nav-info" title="工作流程及文档下载">工作流程及文档下载</div>
-                <p class="triangle"></p>
-            </div>
-        </div>
-        <div class="news-carousel-content">
-            <div class="swiper-container" id="news">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/441888/index.html"
-                            title="第六届基层党建创新典型案例征集活动">
-                            <img src="https://djyimg.peopledata.com.cn/0/20230403/112306af94f2191.jpg"
-                                class="news-carousel-img">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/448887/index.html" title="党员学习园地">
-                            <img src="https://djyimg.peopledata.com.cn/0/20230403/0938594d8f63220.jpg"
-                                class="news-carousel-img">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="http://cpc.people.com.cn/GB/68742/91141/index.html" title="全国党建期刊博览">
-                            <img src="https://djyimg.peopledata.com.cn/0/20230403/111255dbbfe4699.png"
-                                class="news-carousel-img">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="http://dangshi.people.com.cn/GB/437103/index.html" title="党史知识问答自测">
-                            <img src="https://djyimg.peopledata.com.cn/0/20230403/0938594d8f63220.jpg" class="news-carousel-img">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/426539/index.html"
-                            title="党员发展工作流程">
-                            <img src="https://djyimg.peopledata.com.cn/0/20230403/112306af94f2191.jpg" class="news-carousel-img">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news-list">
-            <a target="_blank" href="/index/article/index_news_detail/id/44.html">
-                <div class="news-list-bigTitle">&ldquo;人民党建云&rdquo;将推出&ldquo;红色引擎计划&rdquo;&ldquo;红色数字展厅&rdquo;等品牌栏目</div>
-            </a>
-            <div class="news-list-hot">
-                <div class="news-list-hot-left">
-                    推荐
-                    <p class="triangle"></p>
-                </div>
-                <div class="news-list-hot-right">
-                    <a target="_blank" href="/index/article/index_news_detail/id/41.html">转存！党的二十大报告学习笔记</a>
-                </div>
-            </div>
-            <ul class="news-list-ul">
-                <li><a target="_blank" href="/index/article/index_news_detail/id/42.html"><span
-                            class="red-dot">·</span>一图速览：《中国共产党章程》最新修改对比</a></li>
-                <li><a target="_blank" href="/index/article/index_news_detail/id/43.html"><span
-                            class="red-dot">·</span>云程发轫，扬帆未来，做好红色基因数字传承</a></li>
-                <li><a target="_blank" href="/index/article/index_news_detail/id/40.html"><span
-                            class="red-dot">·</span>扩大朋友圈，画大同心圆，携手人民党建云生态发展</a></li>
-                <li><a target="_blank" href="/index/article/index_news_detail/id/39.html"><span
-                            class="red-dot">·</span>云问答丨什么是&ldquo;数字党建&rdquo;？</a></li>
-                <li><a target="_blank" href="/index/article/index_news_detail/id/38.html"><span
-                            class="red-dot">·</span>人民党建云智慧党建2.0平台实现全栈信创适配！</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- 新闻部分 end -->
-
-    <!-- 专题专栏 start -->
-    <!-- <div class="special-column" id="special">
-        <div class="title">
-            <h3 class="text"><img src="./public/assets/home/img/title-left.png" >专题专栏<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        <div class="special-column-content">
-            <div class="special-column-bigImg">
-                {sql sql="SELECT * FROM `__PREFIX__index_special` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 0,1" key="k" id='vo' cache='60'}
-                <a target="_blank" href="{$vo.content}">
-                    <img class="lazy" src="{$vo.pic}" >
-                </a>
-                {/sql}
-            </div>
-            <div class="special-column-list">
-                {sql sql="SELECT * FROM `__PREFIX__index_special` WHERE `show` = 1 ORDER BY `sort` DESC,`id` DESC LIMIT 1,6" key="k" id='vo' cache='60'}
-                <a target="_blank" href="{$vo.content}">
-                    <img class="lazy" src="{$vo.pic}" >
-                </a>
-                {/sql}
-            </div>
-        </div>
-    </div> -->
-    <div class="special-column" id="special">
-        <div class="title">
-            <h3 class="text"><img src="/assets/home/img/title-left.png">专题专栏<img src="/assets/home/img/title-right.png">
-            </h3>
-        </div>
-        <div class="special-column-content">
-            <div class="special-column-bigImg">
-                <a target="_blank" href="http://leaders.people.com.cn/GB/436874/index.html">
-                    <img class="lazy" src="https://djyimg.peopledata.com.cn/0/20211015/135418990bc8705.jpg">
-                </a>
-            </div>
-            <div class="special-column-list">
-                <a target="_blank" href="http://cpc.people.com.cn/GB/67481/444924/index.html">
-                    <img class="lazy" src="https://djyimg.peopledata.com.cn/0/20220817/1414361b3878379.jpg">
-                </a>
-                <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/427510/index.html">
-                    <img class="lazy" src="/uploads/20210910/8cb3c37e750c8d96654b62121f4053a1.jpg">
-                </a>
-                <a target="_blank" href="http://cpc.people.com.cn/GB/67481/441505/index.html">
-                    <img class="lazy" src="https://djyimg.peopledata.com.cn/0/20220321/13343066aec9540.jpg">
-                </a>
-                <a target="_blank" href="http://dangshi.people.com.cn/GB/234123/index.html">
-                    <img class="lazy" src="/uploads/20210910/10ff9b330f57589c731af858f7986c9e.jpg">
-                </a>
-                <a target="_blank" href="https://ldzl.people.com.cn/dfzlk/front/firstPage.htm">
-                    <img class="lazy" src="/uploads/20210823/5ff0c9136835b2c2636c891092da93a2.png">
-                </a>
-                <a target="_blank" href="http://djsjk.people.cn/">
-                    <img class="lazy" src="/uploads/20210910/8a164c75f026a3c94e072a8f2448c17e.jpg">
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- 专题专栏 end -->
-    <!-- 党建关注 start -->
-    <!-- <div class="hot" id="hot">
-        <div class="title">
-            <h3 class="text"><img src="./public/home/img/title-left.png" >党建关注<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        <div class="hot-wrap">
-            <div class="hot-left">
-                <div class="hot-left-title">党建热词</div>
-                <div class="hot-left-list">
-                    {volist name="hotWordList" id="vo"}
-                    <a href="javascript:void(0)" class="hot-word" data-id="{$vo.id}">{$vo.title}{if !empty($vo.label)}<div class="tag hot-tag {if $vo.label=='新'}new-tag{/if}">{$vo.label}</div>{/if}</a>
-                    {/volist}
-                </div>
-            </div>
-            <div class="hot-right" id="hot-article-wrapper">
-                <div class="hot-right-title">推荐关注</div>
-                <div class="hot-right-list">
-                    {volist name="hotArticleList" id="vo"}
-                    <a target="_blank" href="{:url('article/hot_article_detail',['id'=>$vo.id])}"><span class="red-dot">·</span>{$vo.title}</a>
-                    {/volist}
-                </div>
-            </div>
-            <div class="hot-right" id="hot-word-article-wrapper" style="display: none;">
-                <div class="hot-right-title select"><img src="./public/assets/home/img/fanhui-2.png" id="hot-word-article-back" >为您推荐“<span class="high-light">经验</span>”相关内容</div>
-                <div class="hot-right-list">
-                    {volist name="hotArticleList" id="vo"}
-                    <a target="_blank" href="{:url('article/hot_article_detail',['id'=>$vo.id])}"><span class="red-dot">·</span>{$vo.title}</a>
-                    {/volist}
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- 党建关注 end -->
-    <!-- 云党课 start -->
-    <!-- <div class="study" id="online_study">
-        <div class="title">
-            <h3 class="text"><img src="./public/assets/home/img/title-left.png" >云党课<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        <div class="study-top">
-            <div class="study-top-title">
-                <span>必修订阅</span>
-            </div>
-            <div class="study-top-list">
-                <img src="./public/assets/home/img/study-left.png" class="study-change study-prev" style="left: 39px;">
-                <img src="./public/assets/home/img/study-right.png" class="study-change study-next" style="right: 44px;">
-                <div class="study-top-list-box">
-                    <div class="swiper-container" id="study">
-                        <div class="swiper-wrapper">
-                            {volist name="study2List" id="vo"}
-                            <div class="swiper-slide">
-                                <div class="study-top-list-item" data-id="{$vo.id}" data-title="必修课程">
-                                    <img class="lazy" src="{$vo.list_img}" >
-                                    <p>{$vo.typename}</p>
-                                </div>
-                            </div>
-                            {/volist}
+                    <div class="h-menu">
+                        <div class="h-menu-item">
+                            <a href="/login/login">
+                                <img src="./public/assets/home/img/user2.png">
+                                <span class="h-menu-text">登录</span>
+                            </a>
+                        </div>
+                        <div class="h-menu-item">
+                            <a href="/login/join">
+                                <img src="./public/assets/home/img/join2.png">
+                                <span href="/login/join" class="h-menu-text">申请入驻</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="study-bottom" style="overflow: hidden;">
-            <div class="study-bottom-list" style="overflow: hidden;">
-                {volist name="study1List" id="vo"}
-                <div class="study-bottom-item" data-id="{$vo.id}" data-title="云党课">
-                    <img class="lazy" src="{$vo.list_img}" >
-                    <p>{$vo.typename}</p>
+            <!-- 轮播 -->
+            <div class="banner">
+                <!-- 轮播图 -->
+                <div class="news">
+                    <div class="news-carousel-content">
+                        <div class="swiper-container" id="news">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/441888/index.html"
+                                        title="第六届基层党建创新典型案例征集活动">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/112306af94f2191.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/448887/index.html"
+                                        title="党员学习园地">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/0938594d8f63220.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://cpc.people.com.cn/GB/68742/91141/index.html"
+                                        title="全国党建期刊博览">
+                                        <img src="https://djyimg.peopledata.com.cn/0/20230403/111255dbbfe4699.png"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangshi.people.com.cn/GB/437103/index.html"
+                                        title="党史知识问答自测">
+                                        <img src="https://djy.people.com.cn/uploads/20210820/81fcedab4720e78736e118b60fd4f348.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/426539/index.html"
+                                        title="党员发展工作流程">
+                                        <img src="https://djy.people.com.cn/uploads/20210820/951937b86241d28685825760b3cf8bd6.jpg"
+                                            class="news-carousel-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-nav">
+                        <div class="news-nav-item news-active">
+                            <div class="news-nav-title" title="第六届基层党建创新典型案例征集活动">第六届基层党建创新典型案例征集活动</div>
+                            <div class="news-nav-info" title="基层党建创新案例征集">基层党建创新案例征集</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党员学习园地">党员学习园地</div>
+                            <div class="news-nav-info" title="@全体党员，学习时间到！">@全体党员，学习时间到！</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="全国党建期刊博览">全国党建期刊博览</div>
+                            <div class="news-nav-info" title="党建理论学习平台">党建理论学习平台</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党史知识问答自测">党史知识问答自测</div>
+                            <div class="news-nav-info" title=" 一起来答题吧"> 一起来答题吧</div>
+                            <p class="triangle"></p>
+                        </div>
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="党员发展工作流程">党员发展工作流程</div>
+                            <div class="news-nav-info" title="工作流程及文档下载">工作流程及文档下载</div>
+                            <p class="triangle"></p>
+                        </div>
+                    </div>
                 </div>
-                {/volist}
             </div>
-        </div>
-    </div> -->
-    <!-- 云党课 end -->
-    <!-- 党建应用 start -->
-    <!-- <div class="apply" id="application">
-        <div class="title">
-            <h3 class="text"><img src="./public/assets/home/img/title-left.png" >党建应用<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        {sql sql="SELECT * FROM `__PREFIX__party_building_app_category` WHERE `status` = 1 ORDER BY `sort` DESC,`id` DESC" key="k" id='vo' cache='60' cache_tag='party_building_app_category'}
-        {php}
-        $exist = \think\Db::name('party_building_app')->where('cat_id', $vo['id'])->where('status', 1)->cache(true, 60, 'party_building_app')->find();
-        {/php}
-        <a href="{if $exist}{:url('Index/PartyBuildingApp/detail',['cat_id'=>$vo.id])}{else}javascript:void(0);{/if}" target="{if $exist}_blank{else}_self{/if}" class="apply-item mh180" style="background-image: url({$vo.background_img});background-size: 100% 100%;">
-            <img src="{$vo.icon}" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">{$vo.name}</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    {$vo.content|raw}
+            <!--产品专区 -->
+            <div class="red_num" id="cpzq">
+                <div class="title">
+                    <h3 class="text">
+                        产品专区
+                        <p>以党建为引领，结合纪检、德育、党务管理、党建课程学习等实际场景，创造丰富的产品</p>
+                </div>
+                <div class="red_con">
+
+                    <div id="accordion" class="djy_cpbox">
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/djy_cp1.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">党建元宇宙</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/djy_cp2.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">纪委大数据研判平台</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/djy_cp3.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">党建品牌计划</span><span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/djy_cp4.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">党建课程</span><span class="_banner-active-line"></span>
+                        </div>
+                        <div class="_banner-item_ktrs0_297"
+                            style="background: url('./public/assets/home/img/djy_cp5.png');  ">
+                            <div class="_banner-item-modal_ktrs0_320"></div>
+                            <span class="_banner-title_ktrs0_314">党费缴纳</span>
+                            <span class="_banner-active-line"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </a>
-        {/sql}
+            <!--党建课程 -->
+            <div class="jjfa_box" id="special">
+                <div class="title">
+                    <h3 class="text">党建课程</h3>
+                    <p>将党课搬上“指尖”、上传“云端”，为各级党组织提供党员学习一站式服务</p>
+                </div>
+                <div class="djkc_con">
+                    <div class="kc_1"></div>
+                    <div class="kc_2"></div>
+                    <div class="kc_3"></div>
+                    <div class="kc_4"></div>
+                </div>
+                <div class="djkc_con">
+                    <div class="kc_5"></div>
+                    <div class="kc_6"></div>
+                    <div class="kc_7"></div>
+                    <div class="kc_8"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main w1200">
+            <!-- 智慧党建 start -->
+            <div class="position" id="orientation">
+                <div class="title">
+                    <h3 class="text">智慧党建</h3>
+                    <p>为各级党组织提供全场景能力支撑的、可高度定制的 SaaS 化技术和资源输出平台</p>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                        <img src="./public/assets/home/img/position1.png">
+                    </div>
+                    <div class="position-item-title">汇聚权威党建资源</div>
+                    <div class="position-item-text">同步更新人民日报、人民网权威党建资讯，汇聚各类党建、干部、人才、党史等数据库、资料库，为用户提供权威、全面、及时的党建信息。</div>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                        <img src="./public/assets/home/img/position2.png">
+                    </div>
+                    <div class="position-item-title">量身打造方案</div>
+                    <div class="position-item-text">根据用户个性化需求定制开发，为党组织量身打造线上线下一体化、场景化的智慧党建解决方案。</div>
+                </div>
+                <div class="position-item">
+                    <div class="lazy">
+                        <img src="./public/assets/home/img/position3.png">
+                    </div>
+                    <div class="position-item-title">服务党员教育培训</div>
+                    <div class="position-item-text">聚合海量的视频云党课资源，提供可定制的学习资源；提供考评、排名、答题等功能，方便及时全面统计学习进度，评估学习效果。</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!-- 平台特色功能start -->
+            <div class="ptes_container">
+                <div class="title">
+                    <!-- <h3 class="text">平台特色功能</h3>
+                    <p>模块按需定制，全方位打造“智慧党建”新时代</p>
+                    <div class="ljgd"><a href="https://djy.people.com.cn/function/detail/cat_id/4.html"
+                            target="_blank">了解更多></a></div> -->
+                </div>
+                <div class="movie" style="position: relative;">
+                    <div class="movie__card1" style="position: relative">
+                        <img src="./public/assets/home/img/ptts-bg.png" class="movie__card" alt="">
+                        <!-- <div class="image_8 flex-col"> -->
+                        <div class=" flex-col" style="position: absolute;top: 35px;left: 23px;">
+                            <div class="text-wrapper_16 flex-row justify-between">
+                                <span class="text_60 ">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党组织咨询
+                                    </a>
+                                </span>
+                                <span class="text_61">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/5.html" target="_blank">
+                                        组织生活管理
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_17 flex-row justify-between">
+                                <span class="text_62">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党党组织管理
+                                    </a>
+                                </span>
+                                <span class="text_63">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/5.html" target="_blank">
+                                        组织生活发布
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_18 flex-row">
+                                <span class="text_64">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/2.html" target="_blank">
+                                        党建门户
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_19 flex-row">
+                                <span class="text_65">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        奖惩管理
+                                    </a>
+                                </span>
+                                <span class="text_66">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/2.html" target="_blank">
+                                        党建热点
+                                    </a>
+                                </span>
+                                <span class="text_67">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党组织管理
+                                    </a>
+                                </span>
+                                <span class="text_68">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/3.html" target="_blank">
+                                        在线考试
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_20 flex-row justify-between">
+                                <span class="text_69">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党员发展管理
+                                    </a>
+                                </span>
+                                <span class="text_70">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/3.html" target="_blank">
+                                        视频课程
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_21 flex-row">
+                                <span class="text_71">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        组织关系转换
+                                    </a>
+                                </span>
+                                <span class="text_72">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党费缴纳
+                                    </a>
+                                </span>
+                                <span class="text_73">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/3.html" target="_blank">
+                                        在线学习
+                                    </a>
+                                </span>
+                                <span class="text_74">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/3.html" target="_blank">
+                                        云党课
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_22 flex-row justify-between">
+                                <span class="text_75">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党组织换届管理
+                                    </a>
+                                </span>
+                                <span class="text_76">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/3.html" target="_blank">
+                                        荣誉证书
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_23 flex-row">
+                                <span class="text_77">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/4.html" target="_blank">
+                                        党员管理
+                                    </a>
+                                </span>
+                                <span class="text_78">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/6.html" target="_blank">
+                                        民主投票
+                                    </a>
+                                </span>
+                                <span class="text_79">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/7.html" target="_blank">
+                                        荣誉展示
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_24 flex-row justify-between">
+                                <span class="text_80">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/6.html" target="_blank">
+                                        通知公告
+                                    </a>
+                                </span>
+                                <span class="text_81">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/7.html" target="_blank">
+                                        书记信箱
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="text-wrapper_25 flex-row justify-between">
+                                <span class="text_82">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/6.html" target="_blank">
+                                        调查问卷
+                                    </a>
+                                </span>
+                                <span class="text_83">
+                                    <a class="image_a flicker"
+                                        href="https://djy.people.com.cn/function/detail/cat_id/7.html" target="_blank">
+                                        政治生日祝福
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- 资讯动态strat -->
+        <div class="zxdt_box">
+            <div class="title">
+                <h3 class="text">专题专栏</h3>
+                <p>人民党建云官方专题专栏信息一览</p>
+            </div>
+            <!-- <div class="box_21 flex-row justify-between">
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg1.jpg">
+                    </div>
+                </div>
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg2.png">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="box_22 flex-row justify-between">
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg3.jpg">
+                    </div>
+                </div>
+                <div class="section_6 flex-col">
+                    <div class="text-wrapper_10">
+                        <span class="text_41">人民党建云重磅发布“红色数字展厅”品牌栏目</span>
+                    </div>
+                    <span class="text_44">近日，人民网·人民党建云推出“红色数字展厅”品牌栏目，该栏目是人民网“红色云展厅”的升级版，是人民网内容科技战略运用于党建场景的具体体现。</span>
+                    <div class="image_9">
+                        <img referrerpolicy="no-referrer" src="./public/assets/home/img/zxdt_bg4.png">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="special-column-content">
+                <div class="special-column-bigImg">
+                    <a target="_blank" href="http://leaders.people.com.cn/GB/436874/index.html">
+                        <img class="lazy" src="./public/assets/home/img/zxdt_bgleft.jpg">
+                    </a>
+                </div>
+                <div class="special-column-list">
+                    <a target="_blank" href="http://cpc.people.com.cn/GB/67481/444924/index.html">
+                        <img class="lazy" src="./public/assets/home/img/zxdt_bg1.jpg">
+                    </a>
+                    <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/427510/index.html">
+                        <img class="lazy" src="./public/assets/home/img/zxdt_bg2.png">
+                    </a>
+                    <a target="_blank" href="http://cpc.people.com.cn/GB/67481/441505/index.html">
+                        <img class="lazy lazy3" src="https://djyimg.peopledata.com.cn/0/20220321/13343066aec9540.jpg">
+                    </a>
+                    <a target="_blank" href="http://dangshi.people.com.cn/GB/234123/index.html">
+                        <img class="lazy" src="./public/assets/home/img/zxdt_bg3.jpg">
+                    </a>
+                    <a target="_blank" href="https://ldzl.people.com.cn/dfzlk/front/firstPage.htm">
+                        <img class="lazy" src="./public/assets/home/img/zxdt_bg4.png">
+                    </a>
+                    <a target="_blank" href="http://djsjk.people.cn/">
+                        <img class="lazy lazy3" src="./public/assets/home/img/zxdt_bg5.jpg">
+                    </a>
+                </div>
+            </div> -->
+            <div class="ztzl_news_box">
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://cpc.people.com.cn/GB/67481/444924/index.html">
+                            <img src="./public/assets/home/img/zxdt_bg1.jpg">
+                        </a>
+                        <a target="_blank" href="http://cpc.people.com.cn/GB/67481/444924/index.html">
+                            <div>
+                                <span>跟着总书记学党史数据库</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/427510/index.html">
+                            <img src="./public/assets/home/img/zxdt_bg2.png">
+                        </a>
+                        <a target="_blank" href="http://dangjian.people.com.cn/GB/136058/427510/index.html">
+                            <div><span>党务书库</span></div>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a target="_blank" href="http://djsjk.people.cn/">
+                            <img src="./public/assets/home/img/zxdt_bg5.jpg">
+                        </a>
+                        <a target="_blank" href="http://djsjk.people.cn/">
+                            <div><span>党的建设数据库</span></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://djsjk.people.cn/">
+                            <img src="./public/assets/home/img/zxdt_bg4.png">
+                        </a>
+                        <a target="_blank" href="http://djsjk.people.cn/">
+                            <div><span>地方领导资料库</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="clear"></div>
+        <!-- foot -->
+        <div class="block_10 flex-col">
+            <div class="group_11 flex-row">
+                <div class="block_11 flex-col justify-between">
+                    <div class="box_18 flex-col">
+                        <div class="section_11 flex-col"></div>
+                    </div>
+                    <span
+                        class="paragraph_1">作为全国领先的智慧党建平台，我们坚持党管数据，服务人民！以党建为引领，结合纪检、德育、党务管理、党建课程学习等实际工作场景，助力全国党组织加速创新党建工作模式，与全国党建产品服务伙伴紧密合作，共同为客户提供更完备的产品、更完善的服务。</span>
+                </div>
+                <div class="block_12 flex-col">
+                    <span class="text_57">联系我们</span>
+                    <span
+                        class="paragraph_2">地址：北京市朝阳区金台西路2号人民日报社新媒体大厦<br />电话：010-65367828<br />邮箱：djy&#64;peopledata.com.cn</span>
+                    <div class="text-wrapper_14 flex-col">
+                        <div class="text_58" id="open_form">
+                            立即咨询
+                        </div>
+                    </div>
+                </div>
+                <div class="image-text_2 flex-col justify-between">
+                    <img class="image_10" referrerpolicy="no-referrer"
+                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/psulngmx2xm77d6ghbwdamgd3xkz4kpet89e0e2252-4220-40fc-8504-09315e42ec32" />
+                    <span class="text-group_3">关注“人民党建云”</span>
+                </div>
+            </div>
+            <div class="xian"></div>
+            <div class="text-wrapper_26 flex-row">
+                <span
+                    class="text_59">Copyright&nbsp;©&nbsp;1997-2023&nbsp;by&nbsp;www.people.com.cn.&nbsp;All&nbsp;rights&nbsp;reserved</span>
+            </div>
+        </div>
+        <!-- Form -->
+        <!-- 返回顶部 -->
+        <div class="top_btn" onclick="scrollToTop()">
+            <img src="./public/assets/home/img/top_btn.png" alt="">
+            置顶
+
+        </div>
     </div>
-    <div class="clear"></div> -->
-    <div class="apply" id="application">
-        <div class="title">
-            <h3 class="text"><img src="/assets/home/img/title-left.png" >党建应用<img src="/assets/home/img/title-right.png" ></h3>
+    <!-- 立即咨询弹窗 -->
+    <div id="open_box" class="form_box">
+        <h3>立即咨询</h3>
+        <p>填写一下信息，我们会有专业商务人员与您取得联系。</p>
+        <div id="closeForm1" style="position: absolute;right: 20px;top: 20px;cursor: pointer;">
+            <img src="./public/assets/home/img/form_box_close.png" style="width:16px;height: 16px;" alt="">
         </div>
-                <a href="/function/detail/cat_id/4.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211014/1652461bd008717.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211014/165243d5ba22817.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">党务管理</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    党组织管理丨党员管理丨党组织换届管理丨党员发展管理丨组织关系转接丨党费缴纳丨奖惩管理                </div>
+        <form class="layui-form" id="myform" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>姓名:
+                </label>
+                <div class="layui-input-block">
+                    <input type="text" id="name" name="name" value="" autocomplete="off" placeholder="请输入姓名"
+                        class="layui-input">
+                </div>
             </div>
-        </a>
-                <a href="/function/detail/cat_id/5.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211015/1404366a8245828.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211015/1404316661d2063.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">组织生活</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    组织生活发布（三会一课、民主生活会等）丨组织生活管理                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>手机号:
+                </label>
+                <div class="layui-input-block">
+                    <input type="tel" name="phone" id="phone" autocomplete="off" class="layui-input"
+                        placeholder="请输入手机号">
+                </div>
             </div>
-        </a>
-                <a href="/function/detail/cat_id/2.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211014/153839648143968.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211014/153827c8d473886.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">党建宣传</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    人民日报、人民网、中国共产党新闻网党建资讯丨党建热点丨党组织资讯丨党建门户                </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>验证码:</label>
+                <div class="layui-input-inline" style="width: 270px;">
+                    <input style="font-size:14px" type="text" name="verifyCode" id="verifyCode" lay-verify="required"
+                        autocomplete="off" class="layui-input" placeholder="请输入短信验证码">
+                </div>
+                <div class="layui-input-inline" style="width:auto;margin-right: 0px;">
+                    <input type="button" class="layui-btn layui-btn-primary form_bottom" id="btnSendCode" value="获取验证码">
+                </div>
             </div>
-        </a>
-                <a href="/function/detail/cat_id/3.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211105/11271212c712499.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211105/112709c2fcf4547.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">学习教育</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    云党课丨视频课程丨在线学习丨在线考试丨荣誉证书                </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>单位名称:</label>
+                <div class="layui-input-block">
+                    <input lay-verify="required" type="text" name="orgName" autocomplete="off" placeholder="请输入单位名称"
+                        class="layui-input">
+                </div>
             </div>
-        </a>
-                <a href="/function/detail/cat_id/6.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211015/140642a48cb2400.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211015/1406364b4fa4935.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">党建工作</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    通知公告丨调查问卷丨民主投票                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>单位类型:</label>
+                <div class="layui-input-block">
+                    <select name="orgType">
+                        <option value="">请选择单位类型</option>
+                        <option value="0">企业</option>
+                        <option value="1">政府</option>
+                        <option value="2">事业单位</option>
+                        <option value="3">其他组织</option>
+                    </select>
+                </div>
             </div>
-        </a>
-                <a href="/function/detail/cat_id/7.html" target="_blank" class="apply-item mh180" style="background-image: url(https://djyimg.peopledata.com.cn/0/20211015/143614f2bf84489.png);background-size: 100% 100%;">
-            <img src="https://djyimg.peopledata.com.cn/0/20211015/143611277983302.png" >
-            <div class="apply-item-text">
-                <div class="apply-item-title">党员服务</div>
-                <div class="apply-item-line"></div>
-                <div class="apply-item-info">
-                    书记信箱丨政治生日祝福丨荣誉展示                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>党组织名称:
+                </label>
+                <div class="layui-input-block">
+                    <input lay-verify="required" type="text" name="partyOrgName" autocomplete="off"
+                        placeholder="请输入党组织名称" class="layui-input">
+                </div>
             </div>
-        </a>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>党组织类型:</label>
+                <div class="layui-input-block">
+                    <select name="partyOrgType">
+                        <option value="">请选择党组织类型</option>
+                        <option value="0">类型1</option>
+                        <option value="1">类型2</option>
+                    </select>
+                </div>
             </div>
-    <div class="clear"></div>
-    <!-- 党建应用 end -->
-    <!-- 平台定位 start -->
-    <div class="position" id="orientation">
-        <div class="title">
-            <h3 class="text"><img src="./public/assets/home/img/title-left.png" >平台定位<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        <div class="position-item">
-            <img class="lazy" src="./public/assets/home/img/position1.png" >
-            <div class="position-item-title">全栈国产信创适配</div>
-            <div class="position-item-text">平台适配国产主流基础软硬件，具备各种组合国产环境调优能力，满足信息安全等级保护要求，真正做到自主安全可控。</div>
-        </div>
-        <div class="position-item">
-            <img class="lazy" src="./public/assets/home/img/position2.png" >
-            <div class="position-item-title">汇聚权威党建资源</div>
-            <div class="position-item-text">同步更新人民日报、人民网权威党建资讯，汇聚各类党建、干部、人才、党史等数据库、资料库，为用户提供权威、全面、及时的党建信息。</div>
-        </div>
-        <div class="position-item">
-            <img class="lazy" src="./public/assets/home/img/position3.png" >
-            <div class="position-item-title">服务党员教育培训</div>
-            <div class="position-item-text">聚合海量的视频云党课资源，提供可定制的学习资源；提供考评、排名、答题等功能，方便及时全面统计学习进度，评估学习效果。</div>
-        </div>
-        <div class="position-item">
-            <img class="lazy" src="./public/assets/home/img/position4.png" >
-            <div class="position-item-title">大数据赋能基层党建</div>
-            <div class="position-item-text">充分运用大数据分析、挖掘能力，建立党建大数据应用模型，提供党组织党员画像、活力指数、创新分析，助力基层党建管理进一步精细化、智慧化。</div>
-        </div>
-        <div class="position-item">
-            <img class="lazy" src="./public/assets/home/img/position5.png" >
-            <div class="position-item-title">量身打造方案</div>
-            <div class="position-item-text">根据用户个性化需求定制开发，为党组织量身打造线上线下一体化、场景化的智慧党建解决方案。</div>
-        </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>党员人数:</label>
+                <div class="layui-input-block">
+                    <input type="text" name="partyNum" lay-verify="required" autocomplete="off" placeholder="请输入党员人数"
+                        class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="reg-danger">*</span>咨询内容:</label>
+                <div class="layui-input-block">
+                    <textarea lay-verify="required" name="consultContent" placeholder="请简要描述您要咨询的问题（产品），我们会安排相关专业人员与您对接"
+                        class="layui-textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item button_content">
+                <div class="layui-input-block">
+                    <button type="reset" id="closeForm" class="layui-btn layui-btn-primary quxiao">取消</button>
+                    <button type="submit" class="layui-btn ljtj">立即提交</button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="clear" style="height: 57px;"></div>
-    <!-- 平台定位 end -->
-    <!-- 部分入驻党组织 start -->
-    <!-- <div class="organize" id="organize">
-        <div class="title">
-            <h3 class="text"><img src="./public/assets/home/img/title-left.png" >部分入驻党组织<img src="./public/assets/home/img/title-right.png" ></h3>
-        </div>
-        <div class="org-swiper-container" style="position: relative;">
-            <div class="swiper-container" id="orgSwiper" style="height: 340px;">
-                <div class="swiper-wrapper">
-                    {volist name="joinDepList" id="vo" mod="12"}
-                    {eq name="mod" value="0"}<div class="swiper-slide">{/eq}
-                    {if (isset($vo[1]))}
-                    <a href="{$vo[1]}" target="_blank" class="organize-item"><span>{$vo[0]}</span></a>
-                    {else}
-                    <div class="organize-item"><span>{$vo[0]}</span></div>
-                    {/if}
-                    {eq name="mod" value="11"}</div>{/eq}
-                    {/volist}
-                    {if count($joinDepList)%12!=0}</div>{/if}
-            </div>
-        </div>
-        <div class="swiper-arr-nav img-prev">
-            <img src="/assets/home/img/study-left.png">
-        </div>
-        <div class="swiper-arr-nav img-next" style="left: auto; right: -20px;">
-            <img src="/assets/home/img/study-right.png">
-        </div>
-        <div class="pagination"></div>
-    </div> -->
-</div>
-<!-- 部分入驻党组织 end -->
+    <div style="display: none;" id="toast">
+        <div class="toast_content"></div>
+    </div>
 
-</div>
-<div class="clear"></div>
-<!-- 内容 end -->
+    <!-- js -->
+    <!-- add -->
+    <script src="./public/js/jquery-3.6.3.min.js" type="text/javascript"></script>
+    <script src="./public/js/jquery.hover3d.js"></script>
+    <script src="./public/plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+    <!-- end -->
+    <script src="./public/assets/home/swiper/idangerous.swiper2.7.6.min.js" type="text/javascript"
+        charset="utf-8"></script>
 
-{include file="public/footer"}
-
-<div id="tong" style="display: none;">
-    <img src="./public/assets/home/img/djy-qrcode3.png">
-    <p>扫码查看课程内容</p>
-</div>
-<!-- footer end -->
-<script src="./public/js/jquery-3.6.3.min.js" type="text/javascript" charset="utf-8"></script>
-<!--<script src="/js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>-->
-<script src="./public/assets/home/swiper/idangerous.swiper2.7.6.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="./public/plugins/layui/layui.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-    var indexBannerCount = parseInt('{:count($index_banner)}');
-    var joinOrgCount = parseInt('{:count($joinDepList)}');
-    $(function() {
-        var bannerSwiper = new Swiper('#banner', {
-            autoplay: indexBannerCount>1?5000:0, //可选选项，自动滑动
-            loop: true, //可选选项，开启循环
-            // pagination : '.pagination',
-            paginationClickable :true,
-            noSwiping : indexBannerCount===1,
-        })
-        var newsSwiper = new Swiper('#news', {
-            autoplay: 5000, //可选选项，自动滑动
-            loop: true, //可选选项，开启循环
-            mode: 'vertical',
-            onlyExternal: true,
-            observer: true,
-            observeParents: true,
-            onSlideChangeStart: function(swiper) {
-                console.log(newsSwiper.activeIndex);
-                $('.news-nav-item').removeClass('news-active').eq(newsSwiper.activeIndex !== 6 ? newsSwiper.activeIndex-1 : 0).addClass('news-active');
-            }
-        })
-
-        // $("img.lazy").lazyload({effect: "fadeIn"});
-
-        $('.news-nav-item').on('click', function(e) {
-            e.preventDefault();
-            //得到当前索引
-            var i = $(this).index();
-            $('.news-nav-item').removeClass('news-active').eq(i).addClass('news-active');
-            console.log(i);
-            newsSwiper.swipeTo(i, 300, false);
-            console.log(newsSwiper.activeIndex);
-        });
-
-        var studySwiper = new Swiper('#study', {
-            loop: false, //可选选项，开启循环
-            slidesPerGroup: 3,
-            slidesPerView: 3,
-        })
-        $('.study-prev').click(function() {
-            studySwiper.swipePrev();
-        });
-        $('.study-next').click(function() {
-            studySwiper.swipeNext();
-        });
-
-        // 点击热词
-        $('.hot-word').click(function() {
-            var id = $(this).data('id');
-            $.ajax({
-                type: 'get',
-                url: '{:url("Index/hotWordArticleList")}',
-                data: {
-                    hot_word_id: id,
-                    first: 0,
-                    limit: "{$hotWordArticleListLimit}",
-                },
-                success: function (res) {
-                    $('#hot-article-wrapper').hide();
-                    $('#hot-word-article-wrapper').show();
-                    $('#hot-word-article-wrapper').html(res);
-                },
+    <script type="text/javascript">
+        // 返回顶部
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
-        });
+        }
+        // 返回顶部end
+        var indexBannerCount = parseInt('{:count($index_banner)}');
+        var joinOrgCount = parseInt('{:count($joinDepList)}');
+        $(function () {
+            var bannerSwiper = new Swiper('#banner', {
+                autoplay: indexBannerCount > 1 ? 5000 : 0, //可选选项，自动滑动
+                loop: true, //可选选项，开启循环
+                // pagination : '.pagination',
+                paginationClickable: true,
+                noSwiping: indexBannerCount === 1,
+            })
+            var newsSwiper = new Swiper('#news', {
+                autoplay: 5000, //可选选项，自动滑动
+                loop: true, //可选选项，开启循环
+                mode: 'vertical',
+                onlyExternal: true,
+                observer: true,
+                observeParents: true,
+                onSlideChangeStart: function (swiper) {
+                    console.log(newsSwiper.activeIndex);
+                    $('.news-nav-item').removeClass('news-active').eq(newsSwiper.activeIndex !== 6 ? newsSwiper.activeIndex - 1 : 0).addClass('news-active');
+                }
+            })
+            //红色数字展厅
+            $('#accordion > div').hover(function () {
+                var $this = $(this);
+                $this.stop().animate({ 'width': '726px' }, 500);
+                $('._banner-title_ktrs0_314', $this).stop(true, true).fadeIn();
+                // $('._banner-active-line', $this).stop(true, true).fadeOut();
+                $('._banner-item-modal_ktrs0_320', $this).stop(true, true).slideDown(500);
+                $('._banner-active-line', $this).stop(true, true).fadeIn();
+            },
+                function () {
+                    var $this = $(this);
+                    $this.stop().animate({ 'width': '240px' }, 1000);
+                    $('._banner-title_ktrs0_314', $this).stop(true, true).fadeIn();
+                    $('._banner-active-line', $this).stop(true, true).fadeOut(500);
+                    $('._banner-item-modal_ktrs0_320', $this).stop(true, true).slideUp(700);
+                }
+            );
 
-        // 热词文章列表返回
-        $('#hot-word-article-wrapper').on('click', '#hot-word-article-back', function() {
-            $('#hot-word-article-wrapper').hide();
-            $('#hot-article-wrapper').show();
-        });
+            //更多解决方案start
+            $('.col').hover(function (e) {
+                console.log()
+                $('.col').removeClass('col2')
+                $(this).addClass('col2');
+                let c = $(this).children()
+                c.hover(function (ev) {
+                    ev.preventDefault()
+                    $(".hover_img_con").removeClass('img_con_show')
+                    console.log($(this).children()[1])
+                    $(this).children().eq(1).addClass('img_con_show')
+                    // $(this).children()[1].show()
+                })
+            })
+            // end
+            // 平台特色功能
+            // $(document).ready(function () {
+            $('.movie').hover3d({
+                selector: ".movie__card1",
+                shine: false,
+                // sensitivity: 100,
+            });
+            // });
+            // end
+            $('.news-nav-item').on('click', function (e) {
+                e.preventDefault();
+                //得到当前索引
+                var i = $(this).index();
+                $('.news-nav-item').removeClass('news-active').eq(i).addClass('news-active');
+                console.log(i);
+                newsSwiper.swipeTo(i, 300, false);
+                console.log(newsSwiper.activeIndex);
+            });
 
-        layui.use(['layer', 'flow'], function() {
-            var layer = layui.layer;
-            var flow = layui.flow;
+            var studySwiper = new Swiper('#study', {
+                loop: false, //可选选项，开启循环
+                slidesPerGroup: 3,
+                slidesPerView: 3,
+            })
+            $('.study-prev').click(function () {
+                studySwiper.swipePrev();
+            });
+            $('.study-next').click(function () {
+                studySwiper.swipeNext();
+            });
 
-            flow.lazyimg();
-
-            $('.study-top-list-item,.study-bottom-item').click(function() {
-                var html = $('#tong');
+            // 点击热词
+            $('.hot-word').click(function () {
                 var id = $(this).data('id');
-                var title = $(this).data('title');
-                html.find('img').attr('src', '{:url("studyQRCode")}' + '?id=' + id + '&title=' + title)
-                layer.open({
-                    type: 1,
-                    title: false,
-                    closeBtn: 0,
-                    area: ['auto'],
-                    skin: 'layui-layer-nobg', //没有背景色
-                    shadeClose: true,
-                    content: html
+                $.ajax({
+                    type: 'get',
+                    url: '{:url("Index/hotWordArticleList")}',
+                    data: {
+                        hot_word_id: id,
+                        first: 0,
+                        limit: "{$hotWordArticleListLimit}",
+                    },
+                    success: function (res) {
+                        $('#hot-article-wrapper').hide();
+                        $('#hot-word-article-wrapper').show();
+                        $('#hot-word-article-wrapper').html(res);
+                    },
                 });
             });
-        });
 
-        var orgSwiper = new Swiper('#orgSwiper', {
-            autoplay: 5000,
-            loop: joinOrgCount / 12 > 1,
-            pagination: joinOrgCount / 12 > 1 ? '.pagination' : false,
-            paginationClickable: true,
-            noSwiping: joinOrgCount / 12 === 1,
+            // 热词文章列表返回
+            $('#hot-word-article-wrapper').on('click', '#hot-word-article-back', function () {
+                $('#hot-word-article-wrapper').hide();
+                $('#hot-article-wrapper').show();
+            });
+
+            layui.use(['layer', 'flow'], function () {
+                var layer = layui.layer;
+                var flow = layui.flow;
+
+                flow.lazyimg();
+
+                $('.study-top-list-item,.study-bottom-item').click(function () {
+                    var html = $('#tong');
+                    var id = $(this).data('id');
+                    var title = $(this).data('title');
+                    html.find('img').attr('src', '{:url("studyQRCode")}' + '?id=' + id + '&title=' + title)
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: ['auto'],
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: html
+                    });
+                });
+            });
+
+            var orgSwiper = new Swiper('#orgSwiper', {
+                autoplay: 5000,
+                loop: joinOrgCount / 12 > 1,
+                pagination: joinOrgCount / 12 > 1 ? '.pagination' : false,
+                paginationClickable: true,
+                noSwiping: joinOrgCount / 12 === 1,
+            })
+            $('.org-swiper-container .img-prev').click(function () {
+                orgSwiper.swipePrev();
+            });
+            $('.org-swiper-container .img-next').click(function () {
+                orgSwiper.swipeNext();
+            });
         })
-        $('.org-swiper-container .img-prev').click(function () {
-            orgSwiper.swipePrev();
-        });
-        $('.org-swiper-container .img-next').click(function () {
-            orgSwiper.swipeNext();
-        });
-    })
-</script>
-{include file="public/stat"}
+    </script>
+    <script src="./public/js/jquery.validate.js"></script>
+    <script src="./public/js/messages_zh.min.js"></script>
+    <script>
+        $('#open_form').on('click', function () {
+            $("#open_box").toggle(true)
+            console.log($("#myform"))
+            formInit();
+        }),
+
+            jQuery.validator.addMethod("zh", function (value, element) {
+                var tel = /^[\u4e00-\u9fa5]+$/;
+                return this.optional(element) || (tel.test(value));
+            }, "请输入汉字");
+
+        $.validator.addMethod("isMobile", function (value, element) {
+            var length = value.length;
+            var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+            return this.optional(element) || (length == 11 && mobile.test(value));
+        }, "请正确填写您的手机号码");
+        var validates = null
+        jQuery.validator.addMethod("reIsCard", function (value, element) {
+            var card = $("input[name='idNumber']").val();
+            var reCard = $("input[name='affirmNumber']").val();
+            if (card == reCard) {
+                return true
+            } else {
+                return false
+            }
+        }, "确认证件号");
+        function formInit() {
+            validates = $("#myform").validate({
+                errorPlacement: function (error, element) {
+                    error.appendTo(element.parent());
+                },
+
+                rules: {
+                    name: {
+                        required: true,
+                        zh: true,
+                        minlength: 2
+                    },
+                    phone: {
+                        required: true,
+                        isMobile: true,
+                    },
+                    orgName: {
+                        required: true,
+                    },
+                    orgType: {
+                        required: true,
+                    },
+                    verifyCode: {
+                        required: true,
+                    },
+                    //党组织名称
+                    partyOrgName: {
+                        required: true,
+                    },
+                    //党组织类型
+                    partyOrgType: {
+                        required: true,
+                    },
+                    //党员人数
+                    partyNum: {
+                        required: true,
+                    },
+                    //咨询内容
+                    consultContent: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    //如果没有提示就是用下面默认提示，一般不用配置
+                    name: {
+                        required: "请输入姓名!",
+                        zh: "请输入中文名!",
+                        minlength: "至少2个汉字!"
+                    },
+                    phone: {
+                        required: "请输入手机号!",
+                        isMobile: "请输入正确的手机号码!",
+                    },
+                    verifyCode: {
+                        required: "请输入验证码!"
+                    },
+                    orgName: {
+                        required: "请输入单位名称!",
+                    },
+                    orgType: {
+                        required: "请选择单位类型!"
+                    },
+                    partyOrgName: {
+                        required: "请输入党组织名称!",
+                    },
+                    partyOrgType: {
+                        required: "请选择党组织类型!",
+                    },
+                    partyNum: {
+                        required: "请输入党员人数!",
+                    },
+                    consultContent: {
+                        required: "请输入咨询内容!",
+                    }
+                },
+                ignore: ":hidden:not(select)",
+                submitHandler: function (form) {
+                    alert("提交事件!");
+                    console.log(form)
+                    let data = {};
+                    var value = $('#myform').serializeArray();
+                    $.each(value, function (index, item) {
+                        data[item.name] = item.value;
+                    });
+                    let json = JSON.stringify(data);
+                    console.log('json : ', data);
+                    var settings = {
+                        "url": "https://djy-test.peopledata.com.cn/api/consult/submit",
+                        "method": "POST",
+                        "dataType": "json",           //接受数据格式   
+                        "data": data
+                    };
+                    $.ajax(settings).done(function (response) {
+                        toast.show(response.msg, 2000);
+                    })
+                }
+
+            })
+        }
+        // 常用方法1 闪屏 toast 提示，2秒后关闭
+        var toast = {
+            t: null,
+            show: function (msg, time) {
+                var $toast = $('#toast');
+                if (this.t) {
+                    clearTimeout(this.t);
+                }
+
+                if (msg) {
+                    var $toastContent = $('#toast .toast_content');
+                    $toastContent.html(msg);
+                }
+                $toast.fadeIn(100);
+                if (time) {
+                    toast.t = setTimeout(function () {
+                        $toast.fadeOut(100);
+                    }, time);
+                } else {
+                    toast.t = setTimeout(function () {
+                        $toast.fadeOut(100);
+                    }, 2000);
+                }
+
+            }
+        }
+        var num = 60
+        $("#btnSendCode").on("click", function () {
+
+            if (num < 60) {
+                return false;
+            }
+            let val = $("#phone").val()
+            if (val == '' || val.length < 11) {
+                return false;
+            }
+            var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+            if (!mobile.test(val)) {
+                return false
+            }
+            var settings = {
+                "url": "https://djy-test.peopledata.com.cn/api/consult/sendSms",
+                "method": "GET",
+                "timeout": 0,
+                "data": {
+                    "phone": val
+                }
+            };
+            $.ajax(settings).done(function (response) {
+                toast.show(response.msg, 2000);
+                if (response.code != 0) {
+                    return false;
+                }
+                $('#btnSendCode').addClass('disabledBtn')
+                smsCode()
+            });
+        })
+        var timer = null
+        function smsCode() {
+            if (num > 0) {
+                num--
+                $("#btnSendCode").val(num)
+                timer = setTimeout(() => {
+                    smsCode()
+                }, 1000)
+            } else {
+                clearTimeout(timer)
+                num = 60
+                $("#btnSendCode").val('获取验证码')
+                $('#btnSendCode').removeClass('disabledBtn')
+            }
+        }
+        $("#closeForm").on('click', function () {
+            $("#open_box").toggle(false);
+            validates.resetForm();
+            // $("#open_box").reset();
+            // layui.form.render();
+        }),
+            $("#closeForm1").on('click', function () {
+                $("#open_box").toggle(false);
+
+                validates.resetForm();
+            })
+
+
+
+
+    </script>
 </body>
+
 </html>
