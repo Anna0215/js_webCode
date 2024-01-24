@@ -30,14 +30,14 @@
 	span{
 		font-size: 20px;
 		font-family: Source Han Sans CN;
-		font-weight: 500;
+		font-weight: 400;
 		color: #333333;
 		margin: 0px 15px 0px 15px;
 	}
 	a{
-		font-size: 20px;
+		font-size: 18px;
 		font-family: Source Han Sans CN;
-		font-weight: 500;
+		font-weight: 400;
 		color: #333333;
 	}
 	a:hover{
@@ -107,7 +107,7 @@
 }
 
 .header .h-content .h-nav ul li a {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: Source Han Sans CN;
 	font-weight: 400;
 	color: #FFFFFF;
@@ -141,9 +141,8 @@
 }
 
 .header .h-content .h-menu .h-menu-item .h-menu-text {
-	font-size: 21px;
+	font-size: 18px;
     font-family: Source Han Sans CN;
-    font-weight: 400;
     color: #FFFFFF;
 }
 
@@ -373,3 +372,202 @@
 	margin: 0 auto;
 
 }
+/* 立即咨询 */
+.sy-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* background: rgba(0, 0, 0, 0.8); */
+	background-color: rgba(0, 0, 0, 0.45);
+	pointer-events: none;
+    left: 0;
+    top: 0;
+    z-index: 1000
+}
+.sy-alert {
+	position: fixed;
+	display: none;
+	overflow: hidden;
+	width: 563px;
+	height: 532px;
+	max-width: 90%;
+	max-height: 80%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 9999;
+	background: url('../img/djy_tk_bg.png') no-repeat center;
+	background-size: cover;
+	box-shadow: 4px 4px 32px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.sy-alert.animated {
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s
+}
+
+.sy-alert .sy-title {
+	font-size: 20px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #333333;
+	text-align: center;
+	margin-top: 29px;
+}
+
+.sy-alert .sy-content {
+	margin-top: 35px;
+}
+
+.sy-alert.sy-alert-model .sy-content {
+	text-align: center
+}
+
+.sy-alert.sy-alert-model .sy-content img {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+}
+
+.sy-alert.sy-alert-model .sy-content p {
+	font-size: 17px;
+	font-family: Source Han Sans CN;
+	font-weight: 500;
+	color: #333333;
+	width: 180px;
+	height: 42px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 42px;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.06);
+}
+
+.sy_box {
+	margin: 0 auto;
+	width: 260px;
+	margin-top: 60px;
+
+}
+
+.sy_box p {
+	font-size: 16px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #333333;
+	line-height: 26px;
+	text-align: justify;
+}
+
+.sy-btn {
+	position: absolute;
+	right: 20px;
+	top: 32px;
+	width: 18px;
+	height: 17px;
+	color: #666666;
+	font-size: 18px;
+	cursor: pointer;
+	background: url('../img/djy_tk_clone.png') no-repeat center;
+	background-size: cover;
+}
+/* 立即咨询end */
+/* 最新底部 */
+.foot_con{
+	width: 100%;
+    height: 458px;
+    background: #C31F1F;
+    margin: 0 auto;
+	
+}
+.foot_con .box1{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding-top: 71px;
+	height: 270px;
+}
+.foot_con .box{
+	width: 585px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px #0000000f;
+    background-color: #ffffff1a;
+    color: #fff;
+    padding: 38px 40px 0px 30px;
+}
+.textBox{
+	font-size: 14px;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 22px;
+	opacity: 0.8;
+	text-align: justify;
+}
+.foot_con .left{
+	margin-right: 30px;
+}
+.foot_con .right{
+	display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+	padding-right: 60px !important
+}
+.right .textBox h2{
+	font-size: 20px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+	margin-bottom: 50px;
+}
+.foot_con .image_10{
+	width: 100px;
+    height: 100px ;
+    display: inline-block;
+}
+.right_flex{
+	padding-top: 45px;
+	text-align: justify;
+}
+.right_flex p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.box_18 {
+	background: url('../img/djy-logo1.png') no-repeat center;
+	background-size: 100% 100%;
+	margin-left: 4px;
+	width: 158px;
+	height: 39px;
+	margin-bottom: 40px;
+  }
+.foot_con .bot_xian{
+	min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    height: 1px;
+    background: #FFFFFF;
+    border: 0px solid #FAFAFA;
+    opacity: 0.5;
+    margin-top: 54px;
+}
+.foot_con .bot_xian p{
+	width: 1200px;
+    height: 63px;
+    margin: 0 auto;
+    line-height: 63px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: white;
+}
+/* weibu */
