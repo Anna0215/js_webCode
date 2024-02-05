@@ -1123,7 +1123,7 @@ color:   #C40B09;
 }
 
 .news .news-nav {
-  width: 460px;
+  width: 474px;
   height: 395px;
   background: #FFFFFF;
   opacity: 0.94;
@@ -1209,7 +1209,7 @@ color:   #C40B09;
 
 .news .news-carousel-content {
   float: left;
-  width: 740px;
+  width: 726px;
   height: 395px;
   overflow: hidden;
   position: relative;
@@ -1217,26 +1217,26 @@ color:   #C40B09;
 
 .news .news-carousel {
   position: relative;
-  width: 740px;
+  width: 726px;
 }
 
 .news .news-carousel {
   position: relative;
-  width: 740px;
+  width: 726px;
 }
 
 .news .swiper-container {
-  width: 740px;
+  width: 726px;
   height: 395px;
 }
 
 .news .swiper-wrapper {
-  width: 740px;
+  width: 726px;
   height: 395px;
 }
 
 .news .news-carousel-img {
-  width: 740px;
+  width: 726px;
   height: 395px;
   cursor: pointer;
 }
