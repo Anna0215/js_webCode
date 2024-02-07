@@ -254,31 +254,31 @@
                         <div class="swiper-container" id="news">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
+                                    <a target="_blank" href="https://mp.weixin.qq.com/s/CIQ9_XQOoSFarIgxm-I4hw"
+                                        title="人民党建云全新改版">
+                                        <img src="./public/assets/home/img/djy_cpa1.png" class="news-carousel-img">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
                                     <a target="_blank" href="https://mp.weixin.qq.com/s/A-nkQlIxCJ-zfSfcyotJgg"
                                         title="党费缴纳">
                                         <img src="./public/assets/home/img/djy_cp5.png" class="news-carousel-img">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a target="_blank" href="https://mp.weixin.qq.com/s/pYiWH3PittNhBCpoA_bODA"
-                                        title="线上云党课">
-                                        <img src="./public/assets/home/img/swp_2.png" class="news-carousel-img">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a target="_blank" href="https://djy-test.peopledata.com.cn/topic/jw"
+                                    <a target="_blank" href="https://djy.peopledata.com.cn/topic/jw"
                                         title="纪委监委大数据分析研判平台">
                                         <img src="./public/assets/home/img/djy_cp2.png" class="news-carousel-img">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a target="_blank" href="https://djy-test.peopledata.com.cn/topic/rmdy"
+                                    <a target="_blank" href="https://djy.peopledata.com.cn/topic/rmdy"
                                         title="人民德育">
                                         <img src="./public/assets/home/img/swp_4.png" class="news-carousel-img">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a target="_blank" href="https://djy-test.peopledata.com.cn/topic/djy"
+                                    <a target="_blank" href="https://djy.peopledata.com.cn/topic/djy"
                                         title="党建品牌咨询">
                                         <img src="./public/assets/home/img/djy_cp3.png" class="news-carousel-img">
                                     </a>
@@ -287,14 +287,14 @@
                         </div>
                     </div>
                     <div class="news-nav">
+                        <div class="news-nav-item ">
+                            <div class="news-nav-title" title="人民党建云全新改版">人民党建云全新改版</div>
+                            <div class="news-nav-info" title="党建引领，业务并进！">党建引领，业务并进！</div>
+                            <p class="triangle"></p>
+                        </div>
                         <div class="news-nav-item news-active">
                             <div class="news-nav-title" title="党费缴纳">党费缴纳</div>
                             <div class="news-nav-info" title="无手续费！无需开通二类户！“云党费”让党费缴纳更安全、更高效、更便捷！">无手续费！无需开通二类户！“云党费”让党费缴纳更安全、更高效、更便捷！</div>
-                            <p class="triangle"></p>
-                        </div>
-                        <div class="news-nav-item ">
-                            <div class="news-nav-title" title="线上云党课">线上云党课</div>
-                            <div class="news-nav-info" title="为党员教育培训提供一站式服务">为党员教育培训提供一站式服务</div>
                             <p class="triangle"></p>
                         </div>
                         <div class="news-nav-item ">
@@ -337,7 +337,7 @@
                                 </div>
                             </div>
                         </div> -->
-                        <a href="https://djy-test.peopledata.com.cn/topic/jw" target="_blank" rel="noopener noreferrer">
+                        <a href="https://djy.peopledata.com.cn/topic/jw" target="_blank" rel="noopener noreferrer">
                             <div class="item active" style="background: url('./public/assets/home/img/djy_cp2.png')">
                                 <div class="shadow"></div>
                                 <div class="content">
@@ -351,7 +351,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://djy-test.peopledata.com.cn/topic/djy" target="_blank"
+                        <a href="https://djy.peopledata.com.cn/topic/djy" target="_blank"
                             rel="noopener noreferrer">
                             <div class="item" style="background: url('./public/assets/home/img/djy_cp3.png')">
                                 <div class="shadow"></div>
@@ -1223,7 +1223,7 @@
                     let json = JSON.stringify(data);
                     console.log('json : ', data);
                     var settings = {
-                        "url": "https://djy-test.peopledata.com.cn/api/consult/submit",
+                        "url": "https://djy.peopledata.com.cn/api/consult/submit",
                         "method": "POST",
                         "dataType": "json",           //接受数据格式   
                         "data": data
@@ -1276,7 +1276,7 @@
                 return false
             }
             var settings = {
-                "url": "https://djy-test.peopledata.com.cn/api/consult/sendSms",
+                "url": "https://djy.peopledata.com.cn/api/consult/sendSms",
                 "method": "GET",
                 "timeout": 0,
                 "data": {
